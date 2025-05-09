@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <title>SED - Anfrage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="bla bla bla">
+  <meta name="description" content="solar energie">
+  <link href="/stylesheets/style.css" rel="stylesheet">
+  <link href="/stylesheets/css/all.css">
+  <link href="/stylesheets/css/all.min.css">
+  <link href="/stylesheets/css/fontawesome.css">
+  <link href="/stylesheets/css/fontawesome.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link type="image/x-icon" href="/images/SED-Logo.ico" rel="icon">
+  <link rel="icon" href="/images/favicon-logo.png" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+<style>
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  #main-bg {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+  }
+
+  .quicksand {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+  .pt-serif-regular {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .pt-serif-bold {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .pt-serif-regular-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .pt-serif-bold-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  #navbar-wrappex:hover {
+    #navbar-menu {
+      display: block;
+    }
+  }
+
+  #video-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0px;
+    left: 0px;
+  }
+
+  .footer {
+    background: url(/images/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    filter:grayscale(30%);
+  }
+
+  .success-box {
+    color: green;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  .error-box {
+    color: red;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+</style>
+
+
+
+
+
+<body class="m-0 p-0 box-border bg-white">
+  <!-- Başarı mesajı --
+
+
+  <!--Header Section-->
+  <div class="bg-gray-700 border fixed bg-opacity-90 border-spacing-0.5 border-opacity-40 border-l-0 border-r-0 border-t-0 border-gray-500 z-50 w-full">
+    <!--Header Container-->
+    <header class="lg:container mx-auto  flex items-center flex-auto py-1 justify-between px-6 border-black">
+      <!--LOGO-->
+      <div class="flex mx-0.5 items-center justify-between">
+        <a href="/">
+          <figure>
+            <img class="cursor-pointer bg-transparent w-auto h-[40px] md:h-[60px]" src="/images/sed-header-logo.png">
+          </figure>
+        </a>
+      </div>
+      <!--PUANS -->
+      <div class="flex items-center justify-center">
+        <img class="w-32  rounded-lg bg-center bg-slate-200 cursor-pointer bg-opacity-45  md:w-36" src="/images/anfrage-stars.png" alt="anfrage-stars">
+      </div>
+    </header>
+  </div>
+
+
+
+  <main class="container-fluid  mx-auto ">
+    <!--Main Content-->
+    <div class="relative flex items-center justify-center h-screen">
+      <!--Video Bg-->
+      <video id="video-bg" autoplay muted loop>
+        <source src="/images/request-bg.mp4" type="video/mp4">
+      </video>
+
+       <!---FORM --->
+       
+
+       <form class="p-5 pl-3 rounded-xl brightness-100 mt-10 z-10 cursor-pointer" id="combinedForm" action="/" method="POST">
+        <div class="p-5 flex items-start justify-center bg-black bg-opacity-40 rounded-md gap-2" id="form-wrapper" style="box-shadow: 3px 5px 10px black;">
+          <div class="flex flex-1 flex-wrap flex-col gap-6 justify-center p-0.5 items-center">
+            <div class="flex flex-col items-center quicksand border-2 rounded-xl p-10 justify-center gap-8" id="form-kontakt-wrappex">
+   
+              <!-- FORM 1 -->
+              <div class="form-section relative flex flex-col gap-6" id="firstForm">
+
+                <div class="absolute -left-4 text-6xl p-1 quicksand font-bold rounded-full bg-emerald-600 px-6 text-white">
+                  <h1>1</h1>
+                </div>
+
+                <div class="flex flex-col text-slate-300 items-center text-center justify-center text-xs font-bold left-1 gap-8">
+                  
+                  <div>
+                    <i class="fa-solid fas fa fa-4x fa-solar-panel"></i>
+                  </div>
+                  <div class="flex flex-col text-slate-300 items-center text-center justify-center text-xs font-bold left-1 gap-2">
+                  <label class="text-slate-200 text-base md:text-lg xl:text-xl" for="familien">1) Solaranlage
+                    installiert werden?</label>
+                  <select class="border border-black bg-blue-200 bg-opacity-70 text-black font-bold quicksand text-center cursor-pointer p-2 w-60 md:w-72 lg:w-80 xl:w-96 rounded-md" name="question1" required>
+                    <option value="Ein-familien">Ein-oder Zwei-Familienhaus</option>
+                    <option value="Doppelhaushälfte">Doppelhaushälfte</option>
+                    <option value="Reihenhaus">Reihenhaus</option>
+                    <option value="Sonstiges">Sonstiges</option>
+                  </select>
+                  </div>
+                </div>
+
+                <div class="flex flex-col text-slate-300 items-center text-center justify-center text-xs font-bold left-1 gap-2">
+                  <label class="text-slate-200 text-base md:text-lg xl:text-xl" for="person">2) Wie hoch ist dein
+                    jährlicher Stromverbrauch?</label>
+                  <select class="border border-black bg-blue-200 bg-opacity-70 text-black font-bold quicksand text-center cursor-pointer p-2 w-60 md:w-72 lg:w-80 xl:w-96 rounded-md" name="question2" required>
+                    <option value="1-Person">1 Person</option>
+                    <option value="2-Person">2 Person</option>
+                    <option value="3-Person">3 Person</option>
+                    <option value="4-Person">4 Person</option>
+                    <option value="5+Person">5+ Person</option>
+                  </select>
+                </div>
+
+                <div class="flex flex-col text-slate-300 items-center text-center justify-center text-xs font-bold left-1 gap-2">
+                  <label class="text-slate-200 text-base md:text-lg xl:text-xl" for="michprivat">3) Privathaushalt
+                    genutzt werden oder ist in deinem?</label>
+                  <select class="border border-black bg-blue-200 bg-opacity-70 text-black font-bold quicksand text-center cursor-pointer p-2 w-60 md:w-72 lg:w-80 xl:w-96 rounded-md" name="question3" required>
+                    <option value="Mich-privat">Nur für mich privat</option>
+                    <option value="Meinemhaus">Ich habe ein Gewerbe in meinem Haus</option>
+                  </select>
+                </div>
+
+                <div class="flex flex-col text-slate-300 items-center text-center justify-center text-xs font-bold left-1 gap-2">
+                  <label class="text-slate-200 text-base md:text-lg xl:text-xl" for="flach">4) Welche Neigung hat dein
+                    Dach?</label>
+                  <select class="border border-black bg-blue-200 bg-opacity-70 text-black font-bold quicksand text-center cursor-pointer p-2 w-60 md:w-72 lg:w-80 xl:w-96 rounded-md" name="question4" required>
+                    <option value="Flach">Flach (0°)</option>
+                    <option value="Leich">Leicht (~15°)</option>
+                    <option value="Normal">Normal (~30°)</option>
+                    <option value="Stark">Stark (~45°)</option>
+                    <option value="Nicht-sicher">Nicht sicher</option>
+                  </select>
+                </div>
+
+                <div class="flex flex-col text-slate-300 items-center text-center justify-center text-xs font-bold left-1 gap-2">
+                  <label class="text-slate-200 text-base md:text-lg xl:text-xl" for="ziegel">5) Aus welchem Material
+                    besteht dein Dach?</label>
+                  <select class="border border-black bg-blue-200 bg-opacity-70 text-black font-bold quicksand text-center cursor-pointer p-2 w-60 md:w-72 lg:w-80 xl:w-96 rounded-md" name="question5" required>
+                    <option value="Ziegel">Ziegel</option>
+                    <option value="Bitumen">Bitumen</option>
+                    <option value="Trapez">Trapezblech</option>
+                    <option value="Sonstiges">Sonstiges</option>
+                  </select>
+                </div>
+
+                <div class="flex items-center justify-center text-center">
+                  <button class="p-3 my-1 rounded-md w-44 hover:bg-lime-600 transition-all duration-700 mt-4 ease-in-out bg-red-600 quicksand text-base text-white" type="submit" onclick="showSecondForm()">
+                    Weitermachen
+                  </button>
+                </div>
+              </div>
+
+              <!-- FORM 2-->
+              <div class="form-section hidden" id="secondForm">
+
+                <div class="flex flex-col text-black p-5 quicksand relative items-center justify-center text-xs font-bold gap-7">
+                  <div class="absolute -left-4 text-6xl top-0 p-1  rounded-full bg-emerald-600 px-6 text-white">
+                    <h1>2</h1>
+                  </div>
+
+
+                  <div>
+                    <i class="fa-4x bg-transparent text-slate-200 fa-solid fa-user-shield fa fas" id="form-user"></i>
+                  </div>
+                  <input class="w-60 p-2 text-center bg-white tracking-wide text-black bg-opacity-90 border rounded-md" name="name" type="text" style="box-shadow: 3px 4px 5px black;" required placeholder="Name">
+
+                  <input class="w-60 p-2 text-center bg-white tracking-wide text-black bg-opacity-90 border rounded-md" name="nachname" type="text" style="box-shadow: 3px 4px 5px black;" required placeholder="Nachname">
+
+                  <input class="w-60 p-2 text-center bg-white tracking-wide text-black bg-opacity-90 border rounded-md" name="email" type="email" style="box-shadow: 3px 4px 5px black;" required placeholder="E-Mail">
+
+                  <input class="w-60 p-2 text-center bg-white tracking-wide text-black bg-opacity-90 border rounded-md" name="tel" type="tel" style="box-shadow: 3px 4px 5px black;" required placeholder="Telefone" maxlength="11">
+
+
+
+                  <!-- Submit Button -->
+                  <div class="flex items-center justify-between gap-4 text-center">
+                    <button class="p-1 my-1 rounded-md w-32 h-12 hover:bg-gray-600 transition-all duration-700 ease-in-out bg-gray-500 quicksand text-sm text-white" type="button" onclick="showFirstForm()">
+
+                      Komm zurück
+                    </button>
+                    <button class="p-1 my-1 rounded-md w-32 h-12 hover:bg-lime-600 transition-all duration-700 ease-in-out bg-red-600 quicksand text-sm text-white" type="submit">
+                      Schicken
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+      </div></form>
+
+      </div>
+    
+    
+  </main>
+
+
+
+ <!--FOOTER-->
+ <footer class="mt-12 pb-4 footer">
+  <div class="container-fluid lg:container mx-auto">
+    <div class="flex flex-col gap-6 p-2 items-center justify-center">
+      <div class="flex flex-row gap-12 md:gap-6 pt-10 p-5 w-full flex-wrap items-center justify-evenly">
+        <!--LOGO-->
+        <div class="flex items-center flex-col border gap-3 py-6 bg-gray-900 bg-opacity-85 rounded-lg p-3 px-6 cursor-pointer">
+          <a href="/"><img class="w-36 h-56 md:w-44 md:h-60 xl:w-56 xl:h-72" src="/images/sed-header-logo.png"></a>
+          <div class="flex flex-col items-start gap-3">
+          <div class="flex flex-row gap-3 bg-slate-100 p-1 bg-opacity-25 items-center justify-center">
+            <i class="fa-solid text-yellow-500 fas fa fa-city"></i>
+            <h2 class="text-slate-200 text-xs md:text-sm">Dieselstraße 77, 90441 Nuremberg</h2>
+          </div>
+
+          <div class="flex flex-row gap-3 bg-slate-100 p-1 bg-opacity-25  items-center justify-center">
+            <i class="fa-solid text-yellow-500 fas fa fa-envelope"></i>
+            <h2 class="text-slate-200 text-xs md:text-sm">www.solareigenbau-invest.de</h2>
+
+          </div>
+
+          <div class="flex flex-row gap-3 bg-slate-100 p-1 bg-opacity-25  items-center justify-center">
+            <i class="fa-solid fas text-yellow-500 fa fa-phone"></i>
+            <h2 class="text-slate-200 text-xs md:text-sm">0911 / 554 477 97</h2>
+
+          </div>
+        </div>
+        </div>
+        <!--FOOTER MENU-->
+        <div class="flex flex-col sm:flex-row items-start justify-center gap-20">
+
+          <div>
+            <ul class="flex flex-col quicksand gap-2 items-start text-xl font-medium justify-center">
+
+              <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 "><a href="/">> Home</a></li>
+
+              <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 "><a href="/produkte">> Produkte</a></li>
+
+
+              <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 "><a href="/vorteile">> Vorteile</a></li>
+
+
+              <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 "><a href="/ratgeber">> Ratgeber</a></li>
+
+            </ul>
+          </div>
+
+          <div>
+            <ul class="flex flex-col quicksand gap-2 items-start text-xl font-medium justify-center">
+              <a href="/">
+                <li class="font-light text-slate-200  duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Entdecken</li>
+              </a>
+              <a href="/">
+                <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Solaranlage</li>
+              </a>
+              <a href="/">
+                <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Solaranlage mit Speicher</li>
+              </a>
+              <a href="/">
+                <li class="font-light text-slate-200  duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Förderung</li>
+              </a>
+
+            </ul>
+          </div>
+          <div>
+            <ul class="flex flex-col quicksand gap-2 items-start text-xl font-medium justify-center">
+              <a href="/">
+                <li class="font-light text-slate-200  duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Mitmachen</li>
+              </a>
+              <a href="/">
+                <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Über SED</li>
+              </a>
+              <a href="/">
+                <li class="font-light text-slate-200  duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Presse</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="border-collapse border-gray-500  w-full my-6 ">
+      <div
+        class="px-0 md:px-12 xl:px-16 w-full text-xs md:text-sm lg:w-4/5 leading-loose tracking-wider text-justify text-slate-200 quicksand py-1 my-1">
+        
+        <p>
+          Repräsentatives Beispiel gemäß § 17 PAngV: Bei einem Barkaufpreis von 8.192 Euro inkl. MwSt. und einer
+          Laufzeit von 25 Jahren (Anzahl der Raten: 300) erhalten mindestens 2/3 aller Kund:innen einen festen
+          Sollzinssatz von 8,20 Prozent (effektiver Jahreszinssatz 8,52 Prozent, Gesamtbetrag 19.296 Euro). Bonität
+          vorausgesetzt. Beachte die Voraussetzungen für den Ratenkauf. Darlehensgeber ist die SED GmbH,
+          Oranienstraße 185, 10999 Berlin. Bei dieser Berechnung handelt es sich um ein tagesaktuelles Preisbeispiel
+          vom 03.06.2024. Änderungen zu einem späteren Zeitpunkt aufgrund wechselnder Marktzinssätze sind vorbehalten.
+        </p>
+      </div>
+      <hr class="border-collapse border-gray-500  w-full my-6 ">
+  
+      
+      <div class="flex flex-row gap-6 items-center my-1 pb-2 justify-center text-center">
+        <ul class="flex flex-row flex-wrap gap-4 quicksand  text-slate-100 cursor-pointer text-xl items-center justify-center">
+          <li>
+            <h1 class="font-bold">2024 SED ®</h1>
+          </li> |
+          <li>
+            <a href="/impressum">
+              <h1>Impressum</h1>
+            </a>
+          </li> |
+          <li>
+            <h1>Datenschutz</h1>
+          </li> |
+          <li>
+            <h1>AGB</h1>
+          </li> |
+          <li>
+            <h1>Cookies</h1>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body>
+<script>
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuBar = document.getElementById('menuBar');
+    const menuArrow = document.getElementById('menuArrow');
+    const mobileMenu = document.getElementById('navbar-menu');
+  
+
+    menuBar.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuBar.classList.toggle('hidden');
+      menuArrow.classList.toggle('hidden');
+    });
+  
+    menuArrow.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuBar.classList.toggle('hidden');
+      menuArrow.classList.toggle('hidden');
+    });
+  
+  
+    document.addEventListener('click', (event) => {
+      if (!mobileMenu.contains(event.target) && !menuBar.contains(event.target) && !menuArrow.contains(event.target)) {
+        mobileMenu.classList.add('hidden');
+        menuBar.classList.remove('hidden');
+        menuArrow.classList.add('hidden');
+      }
+    });
+  });
+  
+
+  function showForm2(event) {
+    event.preventDefault();
+    document.getElementById('form1').style.display = 'none';
+    document.getElementById('form2').style.display = 'block';
+  }
+
+
+  function showSecondForm() {
+    document.getElementById('firstForm').classList.add('hidden');
+    document.getElementById('secondForm').classList.remove('hidden');
+  }
+
+  function showFirstForm() {
+    document.getElementById('secondForm').classList.add('hidden');
+    document.getElementById('firstForm').classList.remove('hidden');
+  }
+
+
+
+  function handleSubmit(event) {
+    
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    const userModel = {};
+    for (const [key, value] of formData.entries()) {
+      userModel[key] = value;
+    }
+
+    if (!userModel.name || !userModel.nachname || !userModel.email || !userModel.tel) {
+      alert("Bitte füllen Sie diese Felder aus.");
+      return;
+    }
+
+    fetch('/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(userModel)
+    })
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(error => console.error('Error:', error));
+
+
+    alert("Ihr Formular wurde erfolgreich gesendet.");
+  }
+
+  
+
+</script>
+
+</html>

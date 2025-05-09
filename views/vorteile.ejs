@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="de">
+
+
+
+<head>
+  <title> SED - Vorteile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="bla bla bla">
+  <meta name="description" content="solar energie">
+  <link href="/stylesheets/style.css" rel="stylesheet">
+  <link href="/stylesheets/css/all.css">
+  <link href="/stylesheets/css/all.min.css">
+  <link href="/stylesheets/css/fontawesome.css">
+  <link href="/stylesheets/css/fontawesome.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="/images/SED-Logo.ico" type="image/x-icon" />
+  <link rel="icon" href="/images/favicon-logo.png" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .quicksand {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+  .libre-franklin {
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+  .pt-serif-regular {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .pt-serif-bold {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .pt-serif-regular-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .pt-serif-bold-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .footer {
+    background: url(/images/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    filter:grayscale(30%);
+  }
+
+  .vorteile-main {
+    background: url(/images/vorteile-main-bg.jpg);
+    background-size: cover;
+    background-position: 100% 70%;
+    filter:sepia(30%)
+
+  }
+</style>
+
+
+
+
+<body class="m-0 p-0 box-border bg-white">
+
+  <!--Header Section-->
+  <div style="z-index: 9999;"
+    class="bg-gray-700 border border-spacing-0.5 fixed border-l-0 border-r-0 border-t-0 border-gray-600 z-50 w-full">
+    <!--Header Container-->
+    <header class="lg:container mx-auto flex items-center flex-auto py-1.5 md:py-2 justify-between px-6 border-black">
+      <!--LOGO-->
+      <div class="flex mx-0.5 items-center justify-center">
+        <a href="/">
+          <figure>
+            <img class="cursor-pointer bg-transparent w-auto h-[40px] md:h-[60px]" src="/images/sed-header-logo.png">
+          </figure>
+        </a>
+      </div>
+      <!--NavBar Menü -->
+      <nav class="hidden lg:flex flex-row items-center justify-center">
+        <ul class="flex flex-row flex-1 items-center text-white gap-4 quicksand justify-center"
+          style=" letter-spacing: 1.53px;">
+
+          <li class="mx-5 text-xs font-light hover:font-bold ease-in-out duration-500 hover:cursor-pointer">
+            <a href="/">Home</a>
+          </li>
+          <li class="mx-5 text-xs font-light hover:font-bold ease-in-out duration-500 hover:cursor-pointer">
+            <a href="/produkte">Produkte</a>
+          </li>
+          <li class="mx-5 text-xs font-light opacity-45 ease-in-out duration-500 hover:cursor-pointer">
+            <a href="/vorteile">Vorteile</a>
+          </li>
+          <li class="mx-5 text-xs font-light hover:font-bold ease-in-out duration-500 hover:cursor-pointer">
+            <a href="/ratgeber">Ratgeber</a>
+          </li>
+
+        </ul>
+      </nav>
+
+
+
+      <!--Request Button-->
+      <div class="md:flex gap-4 hidden items-center justify-center">
+        <h1 class="cursor-pointer text-slate-100 text-sm font-semibold quicksand hover:underline">Freunde empfehlen</h1>
+        <a href="/anfrage" target="_blank"><button
+            class="rounded-2xl bg-orange-400 quicksand text-black text-sm hover:text-white shadow-xl font-semibold hover:bg-lime-600 ease-in-out transition-all duration-700 p-3 px-4 py-1.5"
+            type="button">Erspamis berechnen</button></a>
+      </div>
+
+
+      <!--MOBİLE MENÜ-->
+      <div class="relative lg:hidden z-50 inline-block" id="navbar-wrappex" onclick="openMenu()">
+        <div class="relative">
+          <span>
+            <i class="fa-solid fa-bars fas fa fa-x cursor-pointer" id="menuBar" role="button" style="color: darkgrey;"></i>
+          </span>
+
+          <span>
+            <i class="fa-regular hidden font-extrabold quicksand fas fa   cursor-pointer" id="menuArrow" role="button" ondblclick="closeMenu()" style="color: darkgrey; font-size: 20px;">X</i>
+          </span>
+        </div>
+        <div class="absolute hidden min-w-64 ease-in-out cursor-pointer duration-700 border-hidden mt-4 -right-6 " id="navbar-menu">
+          <ul class="flex flex-col text-black h-screen font-bold quicksand ease-in-out duration-500 gap-6 p-5 z-50 bg-slate-200 bg-opacity-95">
+            <li class="p-1 border border-black border-l-0 border-t-0 border-r-0 pb-2">
+              <a class="text-black text-opacity-65  text-xs  hover:ease-in-out duration-300 hover:text-opacity-100 " href="/">Home</a>
+            </li>
+
+            <li class="p-1 border border-black border-l-0 border-t-0 border-r-0 pb-2">
+              <a class="text-black text-opacity-65 text-xs hover:ease-in-out duration-300  hover:text-opacity-100" href="/produkte">Produkte</a>
+            </li>
+            <li class="p-1 border border-black border-l-0 border-t-0 border-r-0 pb-2">
+              <a class="text-black text-opacity-65  text-xs  hover:ease-in-out duration-300  hover:text-opacity-100" href="/vorteile">Vorteile</a>
+            </li>
+            <li class="p-1 border border-black border-l-0 border-t-0 border-r-0 pb-2">
+              <a class="text-black text-opacity-65  text-xs  hover:ease-in-out duration-300  hover:text-opacity-100" href="/ratgeber">Ratgeber</a>
+            </li>
+            <li class="p-1 border border-black border-l-0 border-t-0 border-r-0 pb-2">
+              <a class="text-black text-opacity-65 hover:ease-in-out  text-xs  duration-300  hover:text-opacity-100" href="/impressum">Impressum</a>
+            </li>
+            <li class="p-1 border-l-0 border-black absolute bottom-14 border-t-0 mb-4 border-r-0 pb-1">
+              <a class="text-black text-opacity-75 hover:ease-in-out duration-300  hover:text-opacity-100 " href="/">
+                <img class="cursor-pointer w-auto h-[50px]" src="/images/sed-header-logo.png">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </div>
+
+
+  <main onclick="closeMobileBar()" class="bg-white relative mt-12">
+    <!--Main Container-->
+    <div style="border-bottom-right-radius: 25%;"
+      class="container-fluid lg:container mx-auto vorteile-main relative bg-gray-600 bg-opacity-85 flex py-12 px-2 md:px-6 flex-col items-center justify-center">
+      <!--Main Section-->
+      <div class="flex items-end justify-center py-12 md:py-20 xl:py-28">
+        <h1
+          class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl  font-bold text-center pt-6 md:pt-10 xl:pt-12 rounded-full quicksand tracking-wider text-white">
+          Vorteile</h1>
+      </div>
+      <!--Main Content-->
+    </div>
+    <div class="container mx-auto">
+      <div class="flex flex-col mb-12 my-5 pt-12 gap-8">
+        <h3 class="text-center text-lg px-4 font-semibold text-black quicksand">
+          Deine Vorteile
+        </h3>
+        <h1
+          class="text-3xl md:text-4xl xl:text-5xl pt-3 px-2  font-semibold quicksand text-center text-black tracking-wider">
+          Wir begeistern durch <br>ausgezeichneten Service
+        </h1>
+      </div>
+
+
+      <!--6 İnfos-->
+      <div class="flex  flex-wrap px-16 py-4 mb-16 gap-4 md:gap-6 xl:gap-10 justify-center items-center">
+
+        <div class="flex flex-col lg:flex-row items-center gap-6 justify-center">
+          <div class="flex flex-col w-full md:w-60 h-80 text-center  items-center p-3.5 justify-center gap-1.5">
+            <i class="fa-3x bg-transparent text-transparent fa-solid fa-file-invoice fas fa"
+              style="color: rgb(32, 30, 30);"></i>
+            <h1 class="text-base md:text-lg font-semibold mt-2 quicksand text-black ">Mit einer PV-Anlage zu mehr
+              Unabhängigkeit</h1>
+            <h2 class="text-base md:text-lg font-extralight quicksand text-center text-black">Die Strompreise erreichen
+              aktuell Rekordhöhen. Mit Solarenergie sparst du Geld und wirst autarker vom Stromanbieter.
+            </h2>
+          </div>
+
+          <div class="flex flex-col w-72 h-80  items-center p-3.5 justify-center text-center px-1 gap-1.5">
+            <i class="fa-3x bg-transparent text-transparent fa-solid fa-handshake fa fas" style="color: black;"></i>
+            <h1 class="text-base md:text-lg font-semibold quicksand mt-2 text-black ">Unsere bedarfsorientierte Beratung
+            </h1>
+            <h2 class="text-base md:text-lg font-extralight quicksand text-center text-black ">Unsere Expert:innen sind
+              jederzeit für dich erreichbar und beantworten deine Fragen rund um dein PV-Projekt.</h2>
+          </div>
+
+          <div class="flex flex-col w-72 h-80  items-center p-3.5 justify-center text-center px-1 gap-1.5">
+            <i class="fa-3x bg-transparent text-transparent fa-solid fa-list fa fas" style="color: black;"></i>
+            <h1 class="text-base md:text-lg font-semibold quicksand mt-2 text-black ">Transparente Planung – mit
+              Festpreisgarantie</h1>
+            <h2 class="text-base md:text-lg font-extralight quicksand text-center text-black ">Im SED
+              Online-Konfigurator kannst du deine PV-Anlage einfach, individuell und markenunabhängig planen.</h2>
+          </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row items-center gap-6 justify-center">
+          <div class="flex flex-col w-72 h-80 text-center items-center p-3.5 justify-center gap-1.5">
+            <i class="fa-3x bg-transparent text-transparent fa-solid fa-user-shield fa fas"
+              style="color: rgb(32, 30, 30);"></i>
+            <h1 class="text-base md:text-lg font-semibold mt-2 quicksand text-black ">Optimal abgesichert – und
+              versichert</h1>
+            <h2 class="text-base md:text-lg font-extralight quicksand text-center text-black">5 Jahre Gewährleistung
+              gibt es auf deine PV-Anlage inklusive. Hinzubuchen kannst du: Garantie-Verlängerung, Versicherung und
+              Wartung.
+            </h2>
+          </div>
+
+          <div class="flex flex-col w-72 h-80  items-center p-3.5 justify-center text-center px-1 gap-1.5">
+            <i class="fa-3x bg-transparent text-transparent fa-solid fa-solar-panel fa fas" style="color: black;"></i>
+            <h1 class="text-base md:text-lg font-semibold quicksand mt-2 text-black ">Garantierte Kompatibilität der
+              Produkte</h1>
+            <h2 class="text-base md:text-lg font-extralight quicksand text-center text-black ">Wir achten bei der
+              Auswahl der Hersteller in unserem Portfolio stets auf höchste Qualität und das beste
+              Preis-Leistungs-Verhältnis. </h2>
+          </div>
+
+          <div class="flex flex-col w-72 h-80  items-center p-3.5 justify-center text-center px-1 gap-1.5">
+            <i class="fa-3x bg-transparent text-transparent fa-solid fa-sun fa fas" style="color: black;"></i>
+            <h1 class="text-base md:text-lg font-semibold quicksand mt-2 text-black ">Leistungsstarke Komponenten</h1>
+            <h2 class="text-base md:text-lg font-extralight quicksand text-center text-black ">Versorge deinen Haushalt
+              die nächsten Jahrzehnte dank unserer leistungsstarken Solarmodule zuverlässig mit deinem eigenen
+              Solarstrom.</h2>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+
+      <!--3 TİTTLE-->
+      <div class="flex flex-col gap-16 xl:gap-24 p-10  mb-16 px-4 xl:px-20  items-center justify-center">
+        <div class="flex items-center justify-center text-center">
+          <h1 class="text-2xl md:text-3xl xl:text-4xl quicksand text-center font-semibold px-4">
+            Installation durch SED
+          </h1>
+        </div>
+
+        <div class="flex flex-row flex-wrap lg:flex-nowrap gap-16 pr-2 xl:pr-12 space-x-4 items-center justify-center">
+          <div class="w-full text-center flex items-center justify-center ">
+            <h1 class="text-3xl md:text-4xl xl:text-5xl quicksand font-medium">
+              Grüne Energie vom<br> eigenen Dach.</h1>
+          </div>
+          <div
+            class="flex items-center justify-center w-full lg:w-3/4 text-center indent-1 tracking-wider quicksand text-sm xl:text-base">
+            <p>Eine Solaranlage produziert grünen Strom, den du in deinem Haushalt nutzen kannst. Schaffe gemeinsam
+              mit der zociety eine lebenswerte Zukunft für alle Menschen, indem du dich und deine Familie mit eigener
+              nachhaltiger Energie versorgst.</p>
+          </div>
+        </div>
+
+
+        <div class="flex flex-row flex-wrap lg:flex-nowrap gap-16 pr-2 xl:pr-12 space-x-4 items-center justify-center">
+          <div class="w-full text-center flex items-center justify-center ">
+            <h1 class="text-3xl md:text-4xl xl:text-5xl quicksand font-medium">
+              Unabhängiger vom Netzbetreiber werden.</h1>
+          </div>
+          <div
+            class="flex items-center justify-center w-full lg:w-3/4 text-center indent-1 tracking-wider quicksand text-sm xl:text-base">
+            <p>Mit einer Solaranlage machst du dich unabhängiger von deinem Stromversorger und somit auch von
+              steigenden Energiekosten. Produziere Solarstrom selbst, vor Ort, und versorge damit deinen Haushalt
+              sowie optional dein E-Auto.</p>
+          </div>
+        </div>
+
+
+
+        <div class="flex flex-row flex-wrap lg:flex-nowrap gap-16 pr-2 xl:pr-12 space-x-4 items-center justify-center">
+          <div class="w-full text-center flex items-center justify-center">
+            <h1 class="text-3xl md:text-4xl xl:text-5xl quicksand font-medium">
+              Ab dem ersten Tag Stromkosten sparen.</h1>
+          </div>
+          <div
+            class="flex items-center justify-center w-full lg:w-3/4 text-center indent-1 tracking-wider quicksand text-sm xl:text-base">
+            <p>Als Besitzer:in einer Photovoltaikanlage deckst du einen Teil deines Strombedarfs mit selbst
+              produzierten Ökostrom ab und sparst dadurch sofort Stromkosten. Langfristig erwirtschaftest du dadurch
+              attraktive Gewinne.</p>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+      <!--Wir sind // TechnicQue-->
+      <section class="container mx-auto flex flex-col gap-16 mt-10">
+        <div class="flex flex-row flex-wrap mx-1 px-1">
+          <div class="flex flex-col py-12 lg:flex-row items-center justify-center">
+            <div class="relative w-full h-full lg:w-1/2">
+              <img class="contrast-100 h-full object-cover" src="
+              /images/vorteile-bg-1.webp" alt="section2-background">
+            </div>
+            <div
+              class="flex w-full lg:w-1/2 py-12 md:py-16 xl:py-20 flex-col h-full flex-wrap p-10 bg-green-900 bg-opacity-70 items-center lg:items-start justify-center text-center lg:text-start  px-16 gap-5 "
+              style="border-top-right-radius: 15%;">
+              <h2 class="font-extralight tracking-wider  text-2xl lg:text-3xl" style="font-family: Times New Roman;">
+                Wir sind ein digitaler Handwerksbetrieb
+                <h1 class="text-base md:text-lg text-stone-200 font-bold quicksand">Solaranlage kaufen und bis zu <br>
+                  Unsere Installateur:innen übernehmen die fachgerechte Montage der Solaranlage bei dir vor Ort.
+                  Zusätzlich verfügen wir über ein breites, deutschlandweites Netzwerk an qualifizierten
+                  Partnerbetrieben, die uns bei Bedarf bei der Installation deiner Solaranlage unterstützen.
+
+                  Dadurch können wir jederzeit die Montage von PV-Anlagen im gesamten Bundesgebiet abdecken. Unsere
+                  breit aufgestelltes Installations-Netzwerk ermöglicht es uns deine Anlage – egal wo – schnellstmöglich
+                  zu installieren sowie ans Netz anzuschließen.
+
+                </h1>
+
+              </h2>
+              <a href="/anfrage">
+                <button
+                  class="p-3 rounded-lg border mt-2 hover:bg-lime-600 hover:border-lime-600 hover:text-white hover:font-bold transition-all ease-in-out duration-700 quicksand px-6 border-black"
+                  type="button">Vorteile entdecken</button>
+              </a>
+            </div>
+          </div>
+
+
+
+
+
+          <!--DER ZOLAR COMPASSS // MOBİLE -->
+          <div class="flex flex-col my-24 mb-10 lg:flex-row-reverse px-4 md:px-10 xl:px-20 items-center justify-center">
+            <div class="relative w-full h-full lg:w-1/2">
+              <img class="contrast-100 h-full w-full" src="/images/vorteile-bg-2.jpg" alt="section2-background">
+            </div>
+            <div
+              class="flex w-full lg:w-1/2 py-5 flex-col h-full flex-wrap p-10 items-center lg:items-start justify-center text-center lg:text-start px-6 xl:px-16 gap-4"
+              style="border-top-right-radius: 15%;">
+              <h2 class="font-extrabold flex text-center lg:text-start quicksand tracking-wider text-4xl lg:text-5xl">
+                Der SED Compass - alles unter einem Dach.
+                <h1 class="text-xl md:text-2xl text-black font-light tracking-wider quicksand">
+                  <h2 class="text-base my-4">Unser System holt das Beste aus deiner Solarlösung heraus.<br> Sichere dir
+                    jetzt attraktive Vorteile:</h2>
+                  <ul class="list-disc items-start gap-4 flex-wrap lg:flex-nowrap justify-center flex flex-row">
+                    <li class="flex flex-col text-center items-center  justify-center gap-1">
+                      <h2 class="font-extrabold libre-franklin">Alle Funktionen App</h2>
+                      <h2 class="quicksand">Wir begleiten dich ab Kauf und über die nächsten 30 Jahre Laufzeit deiner
+                        Solaranlage.</h2>
+                    </li>
+                    <li class="flex flex-col text-center items-center justify-center gap-1">
+                      <h2 class="font-extrabold libre-franklin">Maximiere deine Ersparnis</h2>
+                      <h2 class="quicksand">Spare durch die intelligente Energie-Steuerung deiner Anlage mit E-Auto bis
+                        zu 500 Euro extra.</h2>
+                    </li>
+
+                    <li class="flex flex-col text-center items-center justify-center gap-1">
+                      <h2 class="font-bold libre-franklin">Passe dein System flexibel an</h2>
+                      <h2 class="quicksand">Durch unsere herstelleroffene Lösung sind künftige Erweiterungen besonders
+                        leicht möglich.</h2>
+                    </li>
+                  </ul>
+                </h1>
+
+              </h2>
+              <a href="/anfrage">
+                <button
+                  class="p-3 rounded-lg border mt-2 hover:bg-lime-600 hover:border-lime-600 hover:text-white hover:font-bold transition-all ease-in-out duration-700 quicksand px-6 border-black"
+                  type="button">Vorteile entdecken</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <!--3 TİTTLE-->
+        <div class="flex flex-col gap-16 xl:gap-24 p-10  mb-16 px-4 xl:px-20 items-center justify-center">
+          <div>
+            <h1 class="text-2xl md:text-3xl xl:text-4xl quicksand text-center font-semibold px-4">
+              Profitiere von den Vorteilen der Solarenergie.
+            </h1>
+          </div>
+
+          <div
+            class="flex flex-row flex-wrap lg:flex-nowrap gap-16 pr-2  xl:pr-12 space-x-4 items-center justify-center">
+            <div class="w-full text-center flex items-center justify-center ">
+              <h1 class="text-3xl md:text-4xl xl:text-5xl quicksand font-medium">
+                Grüne Energie vom<br> eigenen Dach.</h1>
+            </div>
+            <div
+              class="flex items-center justify-center w-full lg:w-3/4 text-justify indent-1 tracking-wider quicksand text-sm xl:text-base">
+              <p>Eine Solaranlage produziert grünen Strom, den du in deinem Haushalt nutzen kannst. Schaffe gemeinsam
+                mit der zociety eine lebenswerte Zukunft für alle Menschen, indem du dich und deine Familie mit eigener
+                nachhaltiger Energie versorgst.</p>
+            </div>
+          </div>
+
+
+          <div
+            class="flex flex-row flex-wrap lg:flex-nowrap gap-16 pr-2 xl:pr-12 space-x-4 items-center justify-center">
+            <div class="w-full text-center flex items-center justify-center ">
+              <h1 class="text-3xl md:text-4xl xl:text-5xl quicksand font-medium">
+                Unabhängiger vom Netzbetreiber werden.</h1>
+            </div>
+            <div
+              class="flex items-center justify-center w-full lg:w-3/4 text-justify indent-1 tracking-wider quicksand text-sm xl:text-base">
+              <p>Mit einer Solaranlage machst du dich unabhängiger von deinem Stromversorger und somit auch von
+                steigenden Energiekosten. Produziere Solarstrom selbst, vor Ort, und versorge damit deinen Haushalt
+                sowie optional dein E-Auto.</p>
+            </div>
+          </div>
+
+
+
+          <div
+            class="flex flex-row flex-wrap lg:flex-nowrap gap-16 pr-2 xl:pr-12 space-x-4 items-center justify-center">
+            <div class="w-full text-center flex items-center justify-center">
+              <h1 class="text-3xl md:text-4xl xl:text-5xl quicksand font-medium">
+                Ab dem ersten Tag Stromkosten sparen.</h1>
+            </div>
+            <div
+              class="flex items-center justify-center w-full lg:w-3/4 text-justify indent-1 tracking-wider quicksand text-sm xl:text-base">
+              <p>Als Besitzer:in einer Photovoltaikanlage deckst du einen Teil deines Strombedarfs mit selbst
+                produzierten Ökostrom ab und sparst dadurch sofort Stromkosten. Langfristig erwirtschaftest du dadurch
+                attraktive Gewinne.</p>
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="flex items-center justify-center my-8">
+          <div class="flex flex-col w-full lg:w-3/4 gap-3 items-center text-center px-6 justify-center">
+            <div>
+              <h2 class="text-sm md:text-base font-bold text-center underline quicksand">Unsere Komponenten</h2>
+            </div>
+            <div class="mt-4 mb-2">
+              <h1 class="text-4xl tracking-widest px-10 font-light"
+                style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                Solarmodule, Stromspeicher, Wallbox – so könnte dein PV-System aussehen
+              </h1>
+            </div>
+            <div>
+              <h2 class="text-2xl font-extralight mt-1.5 quicksand">Standard- oder Design-Solarmodule? Mit Stromspeicher
+                oder ohne? Was ist mit einer Wallbox? Erfahre hier mehr über die unterschiedlichen Komponenten.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!--Wallbox - so könnte-->
+      <section class="container-full xl:container mx-auto my-6">
+        <div class="flex flex-col py-8 items-center bg-gray-300 bg-opacity-75 justify-center gap-6 px-12">
+          <!--MODUL1-->
+          <div
+            class="flex flex-row flex-wrap-reverse md:flex-nowrap mt-12 w-full p-7  bg-gray-300 bg-opacity-0  place-content-start pt-4 justify-between">
+
+            <div class="flex flex-col  items-start gap-4 pt-6 pl-12">
+              <h2 class="text-lg font-light quicksand">Photovoltaik-Module</h2>
+              <h1 class="text-3xl font-semibold quicksand tracking-wider">Die Kraftwerke für dein<br> Dach: Solarmodule.
+              </h1>
+              <div class="flex flex-row items-center justify-start mt-1 gap-2">
+                <i class="fa-x fa-solid fas fa fa-arrow-right"></i>
+                <a href="/anfrage">
+                  <h2
+                    class="text-base font-medium animate-pulse cursor-pointer hover:animate-none quicksand tracking-wider">
+                    Zum Solarmodul-Vergleich</h2>
+                </a>
+              </div>
+            </div>
+
+            <div class="text-center  items-center justify-center">
+              <img src="/images/module-1.png" class="h-full w-full object-cover bg-cover">
+            </div>
+
+          </div>
+          <!--MODUL2-->
+          <div
+            class="flex flex-row flex-wrap md:flex-nowrap w-full items-center p-7 bg-gray-300 bg-opacity-0  justify-between">
+
+            <div class="text-center items-center flex justify-center">
+              <img src="/images/module-2.webp" class="object-cover bg-cover">
+            </div>
+
+            <div class="flex flex-col  items-start gap-4 pt-6 pl-12">
+              <h2 class="text-lg font-light quicksand">Stromspeicher</h2>
+              <h1 class="text-3xl font-semibold quicksand tracking-wider">Der Schlüssel zur Unabhängigkeit:<br> Speicher
+                für
+                deine Solaranlage.</h1>
+              <div class="flex flex-row items-center justify-start mt-1 gap-2">
+                <i class="fa-x fa-solid fas fa fa-arrow-right"></i>
+                <a href="/anfrage">
+                  <h2
+                    class="text-base font-medium animate-pulse cursor-pointer hover:animate-none quicksand tracking-wider">
+                    Zum Solarmodul-Vergleich</h2>
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <!--MODUL3-->
+          <div
+            class="flex flex-row flex-wrap-reverse md:flex-nowrap gap-6  w-full items-start p-10 bg-gray-300 pt-6 bg-opacity-0 justify-center lg:justify-between">
+
+            <div class="flex flex-col  items-start gap-4 pt-6 pl-12">
+              <h2 class="text-lg font-light quicksand">Wallbox</h2>
+              <h1 class="text-3xl quicksand font-semibold tracking-wider">Grüne Energie für dein Auto:<br> per
+                Ladestation.
+              </h1>
+              <div class="flex flex-row items-center justify-start mt-1 gap-2">
+                <i class="fa-x fa-solid fas fa fa-arrow-right"></i>
+                <a href="/anfrage">
+                  <h2
+                    class="text-base quicksand animate-pulse cursor-pointer hover:animate-none font-medium tracking-wider">
+                    Zum Solarmodul-Vergleich</h2>
+                </a>
+              </div>
+            </div>
+
+            <div class=" text-center bg-center flex items-center pr-0 md:pr-10 xl:pr-20 pt-6 justify-center">
+              <img src="/images/module-3.webp" class="w-50 h-80">
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+  </main>
+
+
+  <!--FOOTER-->
+  <footer class="mt-12 pb-4 footer">
+    <div class="container-fluid lg:container mx-auto">
+      <div class="flex flex-col gap-6 p-2 items-center justify-center">
+        <div class="flex flex-row gap-12 md:gap-6 pt-10 p-5 w-full flex-wrap items-center justify-evenly">
+          <!--LOGO-->
+          <div class="flex items-center flex-col border gap-3 py-6 bg-gray-900 bg-opacity-85 rounded-lg p-3 px-6 cursor-pointer">
+            <a href="/"><img class="w-36 h-56 md:w-44 md:h-60 xl:w-56 xl:h-72" src="/images/sed-header-logo.png"></a>
+            <div class="flex flex-col items-start gap-3">
+            <div class="flex flex-row gap-3 bg-slate-100 p-1 bg-opacity-25 items-center justify-center">
+              <i class="fa-solid text-yellow-500 fas fa fa-city"></i>
+              <h2 class="text-slate-200 text-xs md:text-sm">Dieselstraße 77, 90441 Nuremberg</h2>
+            </div>
+
+            <div class="flex flex-row gap-3 bg-slate-100 p-1 bg-opacity-25  items-center justify-center">
+              <i class="fa-solid text-yellow-500 fas fa fa-envelope"></i>
+              <h2 class="text-slate-200 text-xs md:text-sm">www.solareigenbau-invest.de</h2>
+
+            </div>
+
+            <div class="flex flex-row gap-3 bg-slate-100 p-1 bg-opacity-25  items-center justify-center">
+              <i class="fa-solid fas text-yellow-500 fa fa-phone"></i>
+              <h2 class="text-slate-200 text-xs md:text-sm">0911 / 554 477 97</h2>
+
+            </div>
+          </div>
+          </div>
+          <!--FOOTER MENU-->
+          <div class="flex flex-col sm:flex-row items-start justify-center gap-20">
+
+            <div>
+              <ul class="flex flex-col quicksand gap-2 items-start text-xl font-medium justify-center">
+
+                <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 "><a href="/">> Home</a></li>
+
+                <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 "><a href="/produkte">> Produkte</a></li>
+
+
+                <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 "><a href="/vorteile">> Vorteile</a></li>
+
+
+                <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 "><a href="/ratgeber">> Ratgeber</a></li>
+
+              </ul>
+            </div>
+
+            <div>
+              <ul class="flex flex-col quicksand gap-2 items-start text-xl font-medium justify-center">
+                <a href="/">
+                  <li class="font-light text-slate-200  duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Entdecken</li>
+                </a>
+                <a href="/">
+                  <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Solaranlage</li>
+                </a>
+                <a href="/">
+                  <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Solaranlage mit Speicher</li>
+                </a>
+                <a href="/">
+                  <li class="font-light text-slate-200  duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Förderung</li>
+                </a>
+
+              </ul>
+            </div>
+            <div>
+              <ul class="flex flex-col quicksand gap-2 items-start text-xl font-medium justify-center">
+                <a href="/">
+                  <li class="font-light text-slate-200  duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Mitmachen</li>
+                </a>
+                <a href="/">
+                  <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Über SED</li>
+                </a>
+                <a href="/">
+                  <li class="font-light text-slate-200  duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Presse</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="border-collapse border-gray-500  w-full my-6 ">
+        <div
+          class="px-0 md:px-12 xl:px-16 w-full text-xs md:text-sm lg:w-4/5 leading-loose tracking-wider text-justify text-slate-200 quicksand py-1 my-1">
+          
+          <p>
+            Repräsentatives Beispiel gemäß § 17 PAngV: Bei einem Barkaufpreis von 8.192 Euro inkl. MwSt. und einer
+            Laufzeit von 25 Jahren (Anzahl der Raten: 300) erhalten mindestens 2/3 aller Kund:innen einen festen
+            Sollzinssatz von 8,20 Prozent (effektiver Jahreszinssatz 8,52 Prozent, Gesamtbetrag 19.296 Euro). Bonität
+            vorausgesetzt. Beachte die Voraussetzungen für den Ratenkauf. Darlehensgeber ist die SED GmbH,
+            Oranienstraße 185, 10999 Berlin. Bei dieser Berechnung handelt es sich um ein tagesaktuelles Preisbeispiel
+            vom 03.06.2024. Änderungen zu einem späteren Zeitpunkt aufgrund wechselnder Marktzinssätze sind vorbehalten.
+          </p>
+        </div>
+        <hr class="border-collapse border-gray-500  w-full my-6 ">
+    
+        
+        <div class="flex flex-row gap-6 items-center my-1 pb-2 justify-center text-center">
+          <ul class="flex flex-row flex-wrap gap-4 quicksand  text-slate-100 cursor-pointer text-xl items-center justify-center">
+            <li>
+              <h1 class="font-bold">2024 SED ®</h1>
+            </li> |
+            <li>
+              <a href="/impressum">
+                <h1>Impressum</h1>
+              </a>
+            </li> |
+            <li>
+              <h1>Datenschutz</h1>
+            </li> |
+            <li>
+              <h1>AGB</h1>
+            </li> |
+            <li>
+              <h1>Cookies</h1>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+</body>
+<script>
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuBar = document.getElementById('menuBar');
+    const menuArrow = document.getElementById('menuArrow');
+    const mobileMenu = document.getElementById('navbar-menu');
+  
+    menuBar.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuBar.classList.toggle('hidden');
+      menuArrow.classList.toggle('hidden');
+    });
+  
+    menuArrow.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuBar.classList.toggle('hidden');
+      menuArrow.classList.toggle('hidden');
+    });
+  
+    document.addEventListener('click', (event) => {
+      if (!mobileMenu.contains(event.target) && !menuBar.contains(event.target) && !menuArrow.contains(event.target)) {
+        mobileMenu.classList.add('hidden');
+        menuBar.classList.remove('hidden');
+        menuArrow.classList.add('hidden');
+      }
+    });
+  });
+</script>
+
+</html>

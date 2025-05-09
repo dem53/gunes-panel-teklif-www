@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <title> SED - Solar Energie Deutschland </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="bla bla bla">
+  <meta name="description" content="solar energie">
+  <link href="/stylesheets/output.css" rel="stylesheet">
+  <link href="/stylesheets/css/all.css">
+  <link href="/stylesheets/css/all.min.css">
+  <link href="/stylesheets/css/fontawesome.css">
+  <link href="/stylesheets/css/fontawesome.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link type="image/x-icon" href="/images/SED-Logo.ico" rel="icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link rel="icon" href="/images/favicon-logo.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+
+<style>
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .quicksand {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+  .pt-serif-regular {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .pt-serif-bold {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .pt-serif-regular-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .pt-serif-bold-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  #home-video {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .footer {
+    background: url(/images/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    filter:grayscale(30%);
+  }
+
+</style>
+
+
+
+
+<body class=" bg-white">
+
+  <!--Header Section-->
+  <div class="bg-gray-700 bg-opacity-95 border  border-spacing-0.5 border-opacity-30 fixed border-l-0 border-r-0 border-t-0 border-gray-600 z-50 w-full" style="z-index: 9999;">
+    <!--Header Container-->
+    <header class="lg:container mx-auto flex items-center flex-auto py-1.5 lg:py-2 justify-between px-6 border-black">
+      <!--LOGO-->
+      <div class="flex mx-0.5 items-center justify-center">
+        <a href="/">
+          <figure>
+            <img class="cursor-pointer bg-transparent w-auto h-[40px] md:h-[60px]" src="/images/sed-header-logo.png">
+          </figure>
+        </a>
+      </div>
+      <!--NavBar Menü -->
+      <nav class="hidden lg:flex flex-row items-center justify-center">
+        <ul class="flex flex-row flex-1 items-center text-white gap-4 quicksand justify-center" style=" letter-spacing: 1.53px;">
+
+          <li class="mx-5 text-xs font-light opacity-45">
+            <h1>Home</h1>
+          </li>
+          <li class="mx-5 text-xs font-light hover:font-bold ease-in-out duration-500 hover:cursor-pointer">
+            <a href="/produkte">Produkte</a>
+          </li>
+          <li class="mx-5 text-xs font-light hover:font-bold ease-in-out duration-500 hover:cursor-pointer">
+            <a href="/vorteile">Vorteile</a>
+          </li>
+          <li class="mx-5 text-xs font-light hover:font-bold ease-in-out duration-500 hover:cursor-pointer">
+            <a href="/ratgeber">Ratgeber</a>
+          </li>
+
+        </ul>
+      </nav>
+
+
+      <!--Request Button-->
+      <div class="md:flex gap-4 hidden items-center justify-center">
+        <h1 class="cursor-pointer text-slate-100 text-sm font-semibold quicksand hover:underline">Freunde empfehlen</h1>
+        <a href="/anfrage" target="_blank"><button class="rounded-2xl bg-orange-400 quicksand text-black text-sm hover:text-white shadow-xl font-semibold hover:bg-lime-600 ease-in-out transition-all duration-700 p-3 px-4 py-1.5" type="button">Erspamis berechnen</button></a>
+      </div>
+
+
+      <!--MOBİLE MENÜ-->
+      <div class="relative lg:hidden z-50 inline-block" id="navbar-wrappex" onclick="openMenu()">
+        <div class="relative">
+          <span>
+            <i class="fa-solid fa-bars fas fa fa-x cursor-pointer" id="menuBar" role="button" style="color: darkgrey;"></i>
+          </span>
+
+          <span>
+            <i class="fa-regular hidden font-extrabold quicksand fas fa   cursor-pointer" id="menuArrow" role="button" style="color: darkgrey; font-size: 20px;">X</i>
+          </span>
+        </div>
+        <div class="absolute hidden min-w-64 ease-in-out cursor-pointer duration-700 border-hidden mt-4 -right-6 " id="navbar-menu">
+          <ul class="flex flex-col text-black h-screen font-bold quicksand ease-in-out duration-500 gap-6 p-5 z-50 bg-slate-200 bg-opacity-95">
+            <li class="p-1 border border-black border-l-0 border-t-0 border-r-0 pb-2">
+              <a class="text-black text-opacity-65  text-xs  hover:ease-in-out duration-300 hover:text-opacity-100 " href="/">Home</a>
+            </li>
+
+            <li class="p-1 border border-black border-l-0 border-t-0 border-r-0 pb-2">
+              <a class="text-black text-opacity-65 text-xs hover:ease-in-out duration-300  hover:text-opacity-100" href="/produkte">Produkte</a>
+            </li>
+            <li class="p-1 border border-black border-l-0 border-t-0 border-r-0 pb-2">
+              <a class="text-black text-opacity-65  text-xs  hover:ease-in-out duration-300  hover:text-opacity-100" href="/vorteile">Vorteile</a>
+            </li>
+            <li class="p-1 border border-black border-l-0 border-t-0 border-r-0 pb-2">
+              <a class="text-black text-opacity-65  text-xs  hover:ease-in-out duration-300  hover:text-opacity-100" href="/ratgeber">Ratgeber</a>
+            </li>
+            <li class="p-1 border border-black border-l-0 border-t-0 border-r-0 pb-2">
+              <a class="text-black text-opacity-65 hover:ease-in-out  text-xs  duration-300  hover:text-opacity-100" href="/impressum">Impressum</a>
+            </li>
+            <li class="p-1 border-l-0 border-black absolute bottom-14 border-t-0 mb-4 border-r-0 pb-1">
+              <a class="text-black text-opacity-75 hover:ease-in-out duration-300  hover:text-opacity-100 " href="/">
+                <img class="cursor-pointer w-auto h-[50px]" src="/images/sed-header-logo.png">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </div>
+
+
+  <!--Main Section-->
+  <div class="bg-white" onclick="closeMobileBar()">
+    <!--Main Container-->
+    <main class="container-fluid flex items-start h-screen relative  justify-center">
+      <!--Main Content-->
+      <video id="home-video" autoplay muted loop>
+        <source class="w-full h-full" src="/images/home-bg.mp4" type="video/mp4">
+      </video>
+
+      <div class="flex flex-col gap-4 relative mt-28 md:mt-36 z-30 items-center flex-wrap flex-1 justify-center">
+        <div class="flex flex-col w-full gap-2">
+          <div>
+            <h1 class="text-2xl md:text-3xl xl:text-4xl font-bold text-center poppins-black text-slate-200" style="text-shadow: 2px 2px 5px black;">
+              Mach dich glücklich – mit Solarstrom vom eigenen Dach</h1>
+          </div>
+          <div>
+
+            <h1 class="text-2xl md:text-3xl pt-3 lg:text-4xl xl:text-5xl px-2 poppins-light  mb-3 font-semibold text-center text-slate-100" style="text-shadow: 2px 2px 5px black; letter-spacing:1.53px;">Finde die beste
+              Solarlösung für<br>deine Langzeit-Ersparnis</h1>
+          </div>
+        </div>
+        <div class="flex flex-row w-full my-3 items-center justify-center gap-2">
+          <i class="fas text-transparent bg-transparent fa-handshake" style="color: white;"></i>
+          <h1 class="text-lg text-white text-center quicksand bg-black p-1 bg-opacity-35  tracking-wide font-semibold" style="text-shadow: 3px 2px 2px 8px black;">Einfach bis zu 3.800 € pro Jahr sparen
+          </h1>
+        </div>
+        <div class="flex flex-row w-full items-center justify-center gap-2">
+          <i class="fa-solid text-transparent bg-transparent fas fa fa-truck" style="color: white; "></i>
+          <h1 class="text-lg text-center  text-white bg-black bg-opacity-35 p-1 quicksand tracking-wide font-semibold" style="text-shadow: 3px 2px 2px 8px black;">
+            In durchschnittlich 3 Monaten installiert</h1>
+        </div>
+        <div class="flex items-center justify-center">
+          <a href="/anfrage" target="_blank">
+            <button class="rounded-2xl mt-5 w-32 text-xs md:w-48 md:text-sm border-orange-500 hover:border-orange-600 border-2 hover:bg-orange-600 text-white bg-orange-500 shadow-xl quicksand ease-in-out transition-all duration-700  py-2.5" type="button" style="text-shadow: 2px 2px 5px black;">Erspamis berechnen</button>
+          </a>
+        </div>
+      </div>
+    </main>
+
+
+
+    <!--Three İnfo-->
+    <section class="flex flex-row gap-6 my-24 justify-center items-center">
+      <div class="flex flex-row flex-wrap items-center justify-center text-center px-12 flex-1 gap-12">
+        <div class="flex flex-col items-center p-3.5 justify-center gap-1.5">
+          <i class="fa-3x bg-transparent text-transparent fa-coins fa fas" style="color: rgb(32, 30, 30);"></i>
+          <h1 class="text-base md:text-lg font-semibold mt-2 quicksand text-black ">Garantierter Festpreis</h1>
+          <h2 class="text-base md:text-lg font-extralight quicksand text-center text-black">Genieße volle
+            Kostensicherheit und
+            <br>Transparenz.
+          </h2>
+        </div>
+
+        <div class="flex flex-col items-center p-3.5 justify-center text-center px-1 gap-1.5">
+          <i class="fa-3x bg-transparent text-transparent fa-list fa fas" style="color: black;"></i>
+          <h1 class="text-base md:text-lg font-semibold quicksand mt-2 text-black ">Passgenaue Planung</h1>
+          <h2 class="text-base md:text-lg font-extralight quicksand text-center text-black ">Von Expert:innen genau auf
+            <br>
+            deinen Bedarf abgestimmt.
+          </h2>
+        </div>
+
+        <div class="flex flex-col items-center p-3.5 justify-center text-center px-1 gap-1.5">
+          <i class="fa-3x bg-transparent text-transparent fa-user-shield fa fas" style="color: black;"></i>
+          <h1 class="text-base md:text-lg font-semibold quicksand mt-2 text-black ">Langlebiges System</h1>
+          <h2 class="text-base md:text-lg font-extralight quicksand text-center text-black ">Bis zu 30 Jahre
+            Leistungsgarantie <br>
+            auf deine Komponenten.</h2>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+
+  <article class="relative ">
+
+
+    <!--Starke Mission-->
+    <section class="container mx-auto my-12 mt-10">
+      <div class="flex flex-row flex-wrap mx-1 px-1">
+        <div class="flex flex-col lg:flex-row items-center justify-center">
+          <div class="relative w-full h-full lg:w-1/2">
+            <img class="contrast-100 h-full w-full" src="/images/home-bg-2.jpeg" alt="section2-background">
+          </div>
+          <div class="flex w-full lg:w-1/2 py-5 flex-col h-full flex-wrap p-10 bg-lime-800 bg-opacity-60 items-center lg:items-start justify-center text-center lg:text-start  px-16 gap-5 " style="border-top-right-radius: 15%;">
+            <h2 class="font-extralight tracking-wider text-base lg:text-lg" style="font-family: Times New Roman;">Starke
+              Mission – starke Partnerschaften</h2>
+            <h1 class="text-4xl md:text-5xl text-stone-200 font-bold quicksand">Erhalte jetzt ein<br> Solarmodul gratis
+            </h1>
+            <h2 class="font-extralight quicksand text-base lg:text-lg">Du bist Mitglied beim ADAC? Dann profitiere dank
+              unserer Partnerschaft von exklusiven Vorteilen und erhalte beim Kauf deiner Solaranlage <strong class="font-bold">ein
+                Solarmodul geschenkt.</strong></h2>
+            <a href="/anfrage"> <button class="p-3 rounded-lg border mt-2 hover:bg-lime-600 hover:border-lime-600 hover:text-white hover:font-bold transition-all ease-in-out duration-700 quicksand px-6 border-black" type="button">Vorteile entdecken</button></a>
+
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center my-16">
+
+        <div class="flex flex-col mt-12 w-full lg:w-3/4 mb-12 gap-3 items-center text-center px-6 justify-center">
+          <div class="my-10 mt-12">
+            <h1 class="text-4xl tracking-widest px-10 font-light" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+              Solaranlage kaufen: Komplettset vom TÜV-geprüften PV-Anbieter
+            </h1>
+          </div>
+          <div>
+            <h2 class="text-2xl font-extralight mt-1.5 quicksand">Wir setzen auf hohe Qualität und individuellen Service
+              –
+              das spiegelt sich auch in unserer Kundenzufriedenheit
+              wider. Wir sind besonders stolz darauf, dass auch der TÜV Saarland diese Meinung teilt und unsere
+              <strong class="font-bold underline pb-0.5">Kundenzufriedenheit mit der Note GUT (1,9) bewertet.</strong>
+            </h2>
+          </div>
+
+        </div>
+      </div>
+
+
+    </section>
+
+     <!--Wallbox - so könnte-->
+     <section class="container-full xl:container mx-auto my-12">
+      <div class="flex flex-col py-8 items-center bg-gray-300 bg-opacity-75 justify-center gap-6 px-12">
+        <!--MODUL1-->
+        <div class="flex flex-row flex-wrap-reverse md:flex-nowrap mt-12 w-full p-7  bg-gray-300 bg-opacity-0 place-content-start pt-4 justify-between">
+
+          <div class="flex flex-col  items-start gap-4 pt-6 pl-12">
+            <h2 class="text-lg font-light quicksand">Photovoltaik-Module</h2>
+            <h1 class="text-3xl font-semibold quicksand tracking-wider">Die Kraftwerke für dein Dach: Solarmodule.
+            </h1>
+            <div class="flex flex-row items-center justify-start mt-1 gap-2">
+              <i class="fa-x fa-solid fas fa fa-arrow-right"></i>
+              <a href="/anfrage">
+                <h2 class="text-base font-medium animate-pulse cursor-pointer hover:animate-none quicksand tracking-wider">
+                  Zum Solarmodul-Vergleich</h2>
+              </a>
+            </div>
+          </div>
+
+          <div class="text-center  items-center justify-center">
+            <img class="h-full w-full object-cover bg-cover" src="/images/module-1.png" alt="module-1-img">
+          </div>
+
+        </div>
+        <!--MODUL2-->
+        <div class="flex flex-row flex-wrap md:flex-nowrap w-full items-center p-7 mr-8 bg-gray-300 bg-opacity-0  justify-between">
+
+          <div class="text-center items-center flex justify-center">
+            <img class="object-cover bg-cover" src="/images/module-2.webp">
+          </div>
+
+          <div class="flex flex-col  items-start gap-4 pt-6 pl-12">
+            <h2 class="text-lg font-light quicksand">Stromspeicher</h2>
+            <h1 class="text-3xl font-semibold quicksand tracking-wider">Der Schlüssel zur Unabhängigkeit:<br> Speicher
+              für
+              deine Solaranlage.</h1>
+            <div class="flex flex-row items-center justify-start mt-1 gap-2">
+              <i class="fa-x fa-solid fas fa fa-arrow-right"></i>
+              <a href="/anfrage">
+                <h2 class="text-base font-medium animate-pulse cursor-pointer hover:animate-none quicksand tracking-wider">
+                  Zum Solarmodul-Vergleich</h2>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <!--MODUL3-->
+        <div class="flex flex-row flex-wrap-reverse md:flex-nowrap gap-6  w-full items-start p-10 bg-gray-300 pt-6 bg-opacity-0 justify-center lg:justify-between">
+
+          <div class="flex flex-col  items-start gap-4 pt-6 pl-12">
+            <h2 class="text-lg font-light quicksand">Wallbox</h2>
+            <h1 class="text-3xl quicksand font-semibold tracking-wider">Grüne Energie für dein Auto:<br> per
+              Ladestation.
+            </h1>
+            <div class="flex flex-row items-center justify-start mt-1 gap-2">
+              <i class="fa-x fa-solid fas fa fa-arrow-right"></i>
+              <a href="/anfrage">
+                <h2 class="text-base quicksand animate-pulse cursor-pointer hover:animate-none font-medium tracking-wider">
+                  Zum Solarmodul-Vergleich</h2>
+              </a>
+            </div>
+          </div>
+
+          <div class=" text-center bg-center flex items-center pr-0 md:pr-10 xl:pr-20 pt-6 justify-center">
+            <img class="w-50 h-80" src="/images/module-3.webp">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--SPONSORE2 // COMPUTER - FOCUS-->
+    <article class="container mx-auto my-12">
+      <div class="flex flex-row flex-1 gap-6 justify-center items-center">
+        <div class="cursor-pointer basis-64">
+          <img src="/images/sponsore-4.webp">
+        </div>
+
+        <div class="cursor-pointer basis-64">
+          <img src="/images/sponsore-6.webp">
+        </div>
+        <div class="cursor-pointer basis-64">
+          <img src="/images/sponsore-8.webp">
+        </div>
+
+        <div class="cursor-pointer basis-64">
+          <img src="/images/sponsore-1.webp">
+        </div>
+
+      </div>
+    </article>
+
+
+
+
+    <!--Interaktive Planung Mit-->
+    <section class="container mx-auto my-8 mt-8">
+      <div class="flex items-center justify-center my-16">
+        <div class="flex flex-row mx-2  px-2">
+          <div class="flex flex-col-reverse lg:flex-row items-center justify-center">
+            <div class="flex w-full lg:w-1/2 py-8 px-12 flex-col h-full flex-wrap p-10 bg-gray-500 bg-opacity-60 items-center lg:items-start justify-center text-center lg:text-start gap-6">
+              <h2 class="font-extralight pt-12 tracking-wider text-base lg:text-lg" style="font-family: Times New Roman;">
+                Interaktive Planung mit persönlicher Beratung</h2>
+              <h1 class="text-4xl md:text-5xl text-stone-200 font-bold quicksand">Mit wenigen Klicks zu<br> deiner
+                Solaranlage
+              </h1>
+              <h2 class="font-extralight quicksand text-base lg:text-lg">Finde jetzt die Solarlösung, die zu dir und
+                deinem Zuhause passt – schon ab 8.512 Euro.</h2>
+              <ul class="flex flex-col gap-3 items-start justify-center pl-4 list-disc">
+                <li>Einfache Online-Planung mit Expert:innen</li>
+                <li>Kostenloser Förderservice inklusive</li>
+                <li>Installiert durch lokale Handwerksbetriebe</li>
+              </ul>
+              <a href="/anfrage"> <button class="p-3 rounded-lg border mt-2 hover:bg-lime-600 hover:border-lime-600 hover:text-white hover:font-bold transition-all ease-in-out duration-700 quicksand px-6 border-black" type="button">Vorteile entdecken</button> </a>
+
+            </div>
+            <div class="relative w-full h-full lg:w-1/2">
+              <img class="contrast-100 h-full w-full" src="/images/home-bg-4.webp" alt="section2-background">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+  
+   
+  </article>
+
+
+  <section class="container-fluid mx-auto py-10" style="background-image: url(/images/home-bg-3.jpeg); background-size: cover; background-position: top;">
+    <!--Main Content-->
+    <div class="flex items-center justify-center flex-col gap-8">
+      <div class="flex flex-1 flex-col items-center justify-center gap-4">
+        <div class="text-center">
+          <h1 class="text-2xl text-white quicksand">
+            Mach jetzt den ersten Schritt zu deiner individuellen Solarlösung
+          </h1>
+        </div>
+        <div class="text-center ">
+          <h1 class="text-4xl md:text-5xl text-white quicksand py-4 ">Unverbindliche Projektberechnung starten:</h1>
+        </div>
+        <div class="flex flex-col md:flex-row  text-white font-bold items-center justify-center gap-6 mt-4 px-1 " style="text-shadow: 3px 4px 5px black;">
+          <div class="flex flex-row items-center justify-center gap-2">
+            <i class="fa-solid bg-blue-300 bg-opacity-90 rounded-full p-1 fas fa fa-check"></i>
+            <h2 class="quicksand text-base">In 3 Minuten zur Prüfung</h2>
+          </div>
+
+          <div class="flex flex-row items-center justify-center gap-2">
+            <i class="fa-solid bg-blue-300 bg-opacity-90 rounded-full p-1 fas fa fa-check"></i>
+            <h2 class="quicksand text-base">Kostenlos & unverbindlich</h2>
+          </div>
+
+          <div class="flex flex-row items-center justify-center gap-2">
+            <i class="fa-solid bg-blue-300 bg-opacity-90 rounded-full p-1 fas fa fa-check"></i>
+            <h2 class="quicksand text-base">Individuelle Beratung</h2>
+          </div>
+        </div>
+
+      </div>
+
+
+      
+
+      <!---FORM --->
+
+      <form class="p-5 pl-3 rounded-xl brightness-100 z-10 cursor-pointer" id="combinedForm" action="/" method="POST">
+        <div class="p-5 flex items-start justify-center bg-black bg-opacity-40 rounded-md gap-2" id="form-wrapper" style="box-shadow: 3px 5px 10px black;">
+          <div class="flex flex-1 flex-wrap flex-col gap-6 justify-center p-0.5 items-center">
+            <div class="flex flex-col items-center quicksand border-2 rounded-xl p-10 justify-center gap-8" id="form-kontakt-wrappex">
+   
+              <!-- FORM 1 -->
+              <div class="form-section relative flex flex-col gap-6" id="firstForm">
+
+                <div class="absolute -left-4 text-6xl p-1 quicksand font-bold rounded-full bg-emerald-600 px-6 text-white">
+                  <h1>1</h1>
+                </div>
+
+                <div class="flex flex-col text-slate-300 items-center text-center justify-center text-xs font-bold left-1 gap-8">
+                  
+                  <div>
+                    <i class="fa-solid fas fa fa-4x fa-solar-panel"></i>
+                  </div>
+                  <div class="flex flex-col text-slate-300 items-center text-center justify-center text-xs font-bold left-1 gap-2">
+                  <label class="text-slate-200 text-base md:text-lg xl:text-xl" for="familien">1) Solaranlage
+                    installiert werden?</label>
+                  <select class="border border-black bg-blue-200 bg-opacity-70 text-black font-bold quicksand text-center cursor-pointer p-2 w-60 md:w-72 lg:w-80 xl:w-96 rounded-md" name="question1" required>
+                    <option value="Ein-familien">Ein-oder Zwei-Familienhaus</option>
+                    <option value="Doppelhaushälfte">Doppelhaushälfte</option>
+                    <option value="Reihenhaus">Reihenhaus</option>
+                    <option value="Sonstiges">Sonstiges</option>
+                  </select>
+                  </div>
+                </div>
+
+                <div class="flex flex-col text-slate-300 items-center text-center justify-center text-xs font-bold left-1 gap-2">
+                  <label class="text-slate-200 text-base md:text-lg xl:text-xl" for="person">2) Wie hoch ist dein
+                    jährlicher Stromverbrauch?</label>
+                  <select class="border border-black bg-blue-200 bg-opacity-70 text-black font-bold quicksand text-center cursor-pointer p-2 w-60 md:w-72 lg:w-80 xl:w-96 rounded-md" name="question2" required>
+                    <option value="1-Person">1 Person</option>
+                    <option value="2-Person">2 Person</option>
+                    <option value="3-Person">3 Person</option>
+                    <option value="4-Person">4 Person</option>
+                    <option value="5+Person">5+ Person</option>
+                  </select>
+                </div>
+
+                <div class="flex flex-col text-slate-300 items-center text-center justify-center text-xs font-bold left-1 gap-2">
+                  <label class="text-slate-200 text-base md:text-lg xl:text-xl" for="michprivat">3) Privathaushalt
+                    genutzt werden oder ist in deinem?</label>
+                  <select class="border border-black bg-blue-200 bg-opacity-70 text-black font-bold quicksand text-center cursor-pointer p-2 w-60 md:w-72 lg:w-80 xl:w-96 rounded-md" name="question3" required>
+                    <option value="Mich-privat">Nur für mich privat</option>
+                    <option value="Meinemhaus">Ich habe ein Gewerbe in meinem Haus</option>
+                  </select>
+                </div>
+
+                <div class="flex flex-col text-slate-300 items-center text-center justify-center text-xs font-bold left-1 gap-2">
+                  <label class="text-slate-200 text-base md:text-lg xl:text-xl" for="flach">4) Welche Neigung hat dein
+                    Dach?</label>
+                  <select class="border border-black bg-blue-200 bg-opacity-70 text-black font-bold quicksand text-center cursor-pointer p-2 w-60 md:w-72 lg:w-80 xl:w-96 rounded-md" name="question4" required>
+                    <option value="Flach">Flach (0°)</option>
+                    <option value="Leich">Leicht (~15°)</option>
+                    <option value="Normal">Normal (~30°)</option>
+                    <option value="Stark">Stark (~45°)</option>
+                    <option value="Nicht-sicher">Nicht sicher</option>
+                  </select>
+                </div>
+
+                <div class="flex flex-col text-slate-300 items-center text-center justify-center text-xs font-bold left-1 gap-2">
+                  <label class="text-slate-200 text-base md:text-lg xl:text-xl" for="ziegel">5) Aus welchem Material
+                    besteht dein Dach?</label>
+                  <select class="border border-black bg-blue-200 bg-opacity-70 text-black font-bold quicksand text-center cursor-pointer p-2 w-60 md:w-72 lg:w-80 xl:w-96 rounded-md" name="question5" required>
+                    <option value="Ziegel">Ziegel</option>
+                    <option value="Bitumen">Bitumen</option>
+                    <option value="Trapez">Trapezblech</option>
+                    <option value="Sonstiges">Sonstiges</option>
+                  </select>
+                </div>
+
+                <div class="flex items-center justify-center text-center">
+                  <button class="p-3 my-1 rounded-md w-44 hover:bg-lime-600 transition-all duration-700 mt-4 ease-in-out bg-red-600 quicksand text-base text-white" type="submit" onclick="showSecondForm()">
+                    Weitermachen
+                  </button>
+                </div>
+              </div>
+
+              <!-- FORM 2-->
+              <div class="form-section hidden" id="secondForm">
+
+                <div class="flex flex-col text-black p-5 quicksand relative items-center justify-center text-xs font-bold gap-7">
+                  <div class="absolute -left-4 text-6xl top-0 p-1  rounded-full bg-emerald-600 px-6 text-white">
+                    <h1>2</h1>
+                  </div>
+
+
+                  <div>
+                    <i class="fa-4x bg-transparent text-slate-200 fa-solid fa-user-shield fa fas" id="form-user"></i>
+                  </div>
+                  <input class="w-60 p-2 text-center bg-white tracking-wide text-black bg-opacity-90 border rounded-md" name="name" type="text" style="box-shadow: 3px 4px 5px black;" required placeholder="Name">
+
+                  <input class="w-60 p-2 text-center bg-white tracking-wide text-black bg-opacity-90 border rounded-md" name="nachname" type="text" style="box-shadow: 3px 4px 5px black;" required placeholder="Nachname">
+
+                  <input class="w-60 p-2 text-center bg-white tracking-wide text-black bg-opacity-90 border rounded-md" name="email" type="email" style="box-shadow: 3px 4px 5px black;" required placeholder="E-Mail">
+
+                  <input class="w-60 p-2 text-center bg-white tracking-wide text-black bg-opacity-90 border rounded-md" name="tel" type="tel" style="box-shadow: 3px 4px 5px black;" required placeholder="Telefone" maxlength="11">
+
+
+
+                  <!-- Submit Button -->
+                  <div class="flex items-center justify-between gap-4 text-center">
+                    <button class="p-1 my-1 rounded-md w-32 h-12 hover:bg-gray-600 transition-all duration-700 ease-in-out bg-gray-500 quicksand text-sm text-white" type="button" onclick="showFirstForm()">
+
+                      Komm zurück
+                    </button>
+                    <button class="p-1 my-1 rounded-md w-32 h-12 hover:bg-lime-600 transition-all duration-700 ease-in-out bg-red-600 quicksand text-sm text-white" type="submit">
+                      Schicken
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+      </div></form>
+
+
+    </div>
+    
+  </section>
+
+
+    <!--INFO BOXS -->
+    <section class="py-1 pb-8 container my-16 md:my-32 mx-auto">
+      <h1 class="text-center text-xl md:text-2xl xl:text-3xl text-black py-5 quicksand font-semibold my-4">Aus deiner
+        Region und
+        erster Hand
+      </h1>
+      <h2 class="text-center text-lg md:text-2xl xl:text-3xl py-4 quicksand my-4 mb-6 text-black font-medium">Mithilfe
+        unserer zociety Karte
+        kannst du glückliche Kund:innen – die SED Heroes – in deiner Nähe finden und diese ganz einfach telefonisch
+        kontaktieren, um von ihren unabhängigen Erfahrungsberichten zu profitieren.</h2>
+      <article class="flex flex-row flex-wrap items-center w-full p-5 justify-center gap-8">
+        <div class="flex w-60 h-44 md:w-80 md:h-72 cursor-pointer hover:z-50 hover:p-2 transition-all duration-1000 ease-out relative rounded-xl p-1">
+          <img class="object-cover relative rounded-xl" src="/images/items-1-bg.jpg" alt="lokasyon-1">
+          <div class="absolute top-4 left-6">
+            <h2 class="text-2xl p-1.5 px-4 rounded-full bg-gray-400 text-white font-bold">1</h2>
+          </div>
+          <div class="absolute bottom-4">
+            <h2 class="text-slate-200 quicksand pl-2 text-sm font-bold">Patrick Maaß aus Brandenburg</h2>
+          </div>
+        </div>
+        <div class="flex  w-60 h-44 md:w-80 md:h-72 cursor-pointer hover:z-50 hover:p-2  transition-all duration-1000 ease-out relative rounded-xl p-1">
+          <img class="object-cover relative rounded-xl" src="/images/items-bg-2.png" alt="lokasyon-1">
+          <div class="absolute top-4 left-6">
+            <h2 class="text-2xl p-1.5 px-4 rounded-full bg-gray-400 text-white font-bold">2</h2>
+          </div>
+          <div class="absolute bottom-4">
+            <h2 class="text-slate-200 quicksand pl-2 text-sm font-bold">Timo Sur aus Falkensee</h2>
+          </div>
+        </div>
+        <div class="flex  w-60 h-44 md:w-80 md:h-72  cursor-pointer hover:z-50 hover:p-2  transition-all duration-1000 ease-out relative rounded-xl p-1">
+          <img class="object-cover relative rounded-xl" src="/images/items-bg-3.jpg" alt="lokasyon-1">
+          <div class="absolute top-4 left-6">
+            <h2 class="text-2xl p-1.5 px-4 rounded-full bg-gray-400 text-white font-bold">3</h2>
+          </div>
+          <div class="absolute bottom-4">
+            <h2 class="text-slate-200 quicksand pl-2 text-sm font-bold">Dennis Keuerleber aus Stuttgart</h2>
+          </div>
+        </div>
+        <div class="flex  w-60 h-44 md:w-80 md:h-72  cursor-pointer hover:z-50 hover:p-2  transition-all duration-1000 ease-out relative rounded-xl p-1">
+          <img class="object-cover rounded-xl" src="/images/items-bg-4.png" alt="lokasyon-1">
+          <div class="absolute top-4 left-6">
+            <h2 class="text-2xl p-1.5 px-4 rounded-full bg-gray-400 text-white font-bold">4</h2>
+          </div>
+          <div class="absolute bottom-4">
+            <h2 class="text-slate-200 quicksand pl-2 text-sm font-bold">Nadine & Philipp Steuer aus Köln</h2>
+          </div>
+        </div>
+      </article>
+    </section>
+
+
+
+ <!--FOOTER-->
+ <footer class="mt-12 pb-4 footer">
+  <div class="container-fluid lg:container mx-auto">
+    <div class="flex flex-col gap-6 p-2 items-center justify-center">
+      <div class="flex flex-row gap-12 md:gap-6 pt-10 p-5 w-full flex-wrap items-center justify-evenly">
+        <!--LOGO-->
+        <div class="flex items-center flex-col border gap-3 py-6 bg-gray-900 bg-opacity-85 rounded-lg p-3 px-6 cursor-pointer">
+          <a href="/"><img class="w-36 h-56 md:w-44 md:h-60 xl:w-56 xl:h-72" src="/images/sed-header-logo.png"></a>
+          <div class="flex flex-col items-start gap-3">
+          <div class="flex flex-row gap-3 bg-slate-100 p-1 bg-opacity-25 items-center justify-center">
+            <i class="fa-solid text-yellow-500 fas fa fa-city"></i>
+            <h2 class="text-slate-200 text-xs md:text-sm">Dieselstraße 77, 90441 Nuremberg</h2>
+          </div>
+
+          <div class="flex flex-row gap-3 bg-slate-100 p-1 bg-opacity-25  items-center justify-center">
+            <i class="fa-solid text-yellow-500 fas fa fa-envelope"></i>
+            <h2 class="text-slate-200 text-xs md:text-sm">www.solareigenbau-invest.de</h2>
+
+          </div>
+
+          <div class="flex flex-row gap-3 bg-slate-100 p-1 bg-opacity-25  items-center justify-center">
+            <i class="fa-solid fas text-yellow-500 fa fa-phone"></i>
+            <h2 class="text-slate-200 text-xs md:text-sm">0911 / 554 477 97</h2>
+
+          </div>
+        </div>
+        </div>
+        <!--FOOTER MENU-->
+        <div class="flex flex-col sm:flex-row items-start justify-center gap-20">
+
+          <div>
+            <ul class="flex flex-col quicksand gap-2 items-start text-xl font-medium justify-center">
+
+              <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 "><a href="/">> Home</a></li>
+
+              <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 "><a href="/produkte">> Produkte</a></li>
+
+
+              <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 "><a href="/vorteile">> Vorteile</a></li>
+
+
+              <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 "><a href="/ratgeber">> Ratgeber</a></li>
+
+            </ul>
+          </div>
+
+          <div>
+            <ul class="flex flex-col quicksand gap-2 items-start text-xl font-medium justify-center">
+              <a href="/">
+                <li class="font-light text-slate-200  duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Entdecken</li>
+              </a>
+              <a href="/">
+                <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Solaranlage</li>
+              </a>
+              <a href="/">
+                <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Solaranlage mit Speicher</li>
+              </a>
+              <a href="/">
+                <li class="font-light text-slate-200  duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Förderung</li>
+              </a>
+
+            </ul>
+          </div>
+          <div>
+            <ul class="flex flex-col quicksand gap-2 items-start text-xl font-medium justify-center">
+              <a href="/">
+                <li class="font-light text-slate-200  duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Mitmachen</li>
+              </a>
+              <a href="/">
+                <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Über SED</li>
+              </a>
+              <a href="/">
+                <li class="font-light text-slate-200  duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Presse</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="border-collapse border-gray-500  w-full my-6 ">
+      <div
+        class="px-0 md:px-12 xl:px-16 w-full text-xs md:text-sm lg:w-4/5 leading-loose tracking-wider text-justify text-slate-200 quicksand py-1 my-1">
+        
+        <p>
+          Repräsentatives Beispiel gemäß § 17 PAngV: Bei einem Barkaufpreis von 8.192 Euro inkl. MwSt. und einer
+          Laufzeit von 25 Jahren (Anzahl der Raten: 300) erhalten mindestens 2/3 aller Kund:innen einen festen
+          Sollzinssatz von 8,20 Prozent (effektiver Jahreszinssatz 8,52 Prozent, Gesamtbetrag 19.296 Euro). Bonität
+          vorausgesetzt. Beachte die Voraussetzungen für den Ratenkauf. Darlehensgeber ist die SED GmbH,
+          Oranienstraße 185, 10999 Berlin. Bei dieser Berechnung handelt es sich um ein tagesaktuelles Preisbeispiel
+          vom 03.06.2024. Änderungen zu einem späteren Zeitpunkt aufgrund wechselnder Marktzinssätze sind vorbehalten.
+        </p>
+      </div>
+      <hr class="border-collapse border-gray-500  w-full my-6 ">
+  
+      
+      <div class="flex flex-row gap-6 items-center my-1 pb-2 justify-center text-center">
+        <ul class="flex flex-row flex-wrap gap-4 quicksand  text-slate-100 cursor-pointer text-xl items-center justify-center">
+          <li>
+            <h1 class="font-bold">2024 SED ®</h1>
+          </li> |
+          <li>
+            <a href="/impressum">
+              <h1>Impressum</h1>
+            </a>
+          </li> |
+          <li>
+            <h1>Datenschutz</h1>
+          </li> |
+          <li>
+            <h1>AGB</h1>
+          </li> |
+          <li>
+            <h1>Cookies</h1>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+
+<script>
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuBar = document.getElementById('menuBar');
+    const menuArrow = document.getElementById('menuArrow');
+    const mobileMenu = document.getElementById('navbar-menu');
+  
+
+    menuBar.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuBar.classList.toggle('hidden');
+      menuArrow.classList.toggle('hidden');
+    });
+  
+    menuArrow.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuBar.classList.toggle('hidden');
+      menuArrow.classList.toggle('hidden');
+    });
+  
+  
+    document.addEventListener('click', (event) => {
+      if (!mobileMenu.contains(event.target) && !menuBar.contains(event.target) && !menuArrow.contains(event.target)) {
+        mobileMenu.classList.add('hidden');
+        menuBar.classList.remove('hidden');
+        menuArrow.classList.add('hidden');
+      }
+    });
+  });
+  
+
+  function showForm2(event) {
+    event.preventDefault();
+    document.getElementById('form1').style.display = 'none';
+    document.getElementById('form2').style.display = 'block';
+  }
+
+
+  function showSecondForm() {
+    document.getElementById('firstForm').classList.add('hidden');
+    document.getElementById('secondForm').classList.remove('hidden');
+  }
+
+  function showFirstForm() {
+    document.getElementById('secondForm').classList.add('hidden');
+    document.getElementById('firstForm').classList.remove('hidden');
+  }
+
+
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    const userModel = {};
+    for (const [key, value] of formData.entries()) {
+      userModel[key] = value;
+    }
+
+    if (!userModel.name || !userModel.nachname || !userModel.email || !userModel.tel) {
+      alert("Bitte füllen Sie diese Felder aus.");
+      return;
+    }
+
+    fetch('/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(userModel)
+    })
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(error => console.error('Error:', error));
+
+
+    alert("Ihr Formular wurde erfolgreich gesendet.");
+  }
+
+
+
+</script>
+
+</html>

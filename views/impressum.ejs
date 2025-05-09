@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="de">
+
+
+
+<head>
+  <title> SED - Impressum</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="bla bla bla">
+  <meta name="description" content="solar energie">
+  <link href="/stylesheets/style.css" rel="stylesheet">
+  <link href="/stylesheets/css/all.css">
+  <link href="/stylesheets/css/all.min.css">
+  <link href="/stylesheets/css/fontawesome.css">
+  <link href="/stylesheets/css/fontawesome.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="/images/SED-Logo.ico" type="image/x-icon" />
+  <link rel="icon" href="/images/favicon-logo.png" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .quicksand {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+  .libre-franklin {
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+  .pt-serif-regular {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .pt-serif-bold {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .pt-serif-regular-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .pt-serif-bold-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .footer {
+    background: url(/images/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    filter:grayscale(30%);
+  }
+</style>
+
+
+
+
+<body class="m-0 p-0 box-border bg-white">
+
+  <!--Header Section-->
+  <div style="z-index: 9999;"
+    class="bg-gray-700 border border-spacing-0.5 fixed border-l-0 border-r-0 border-t-0 border-gray-600 z-50 w-full">
+    <!--Header Container-->
+    <header class="lg:container mx-auto flex items-center flex-auto py-1.5 md:py-2 justify-between px-6 border-black">
+      <!--LOGO-->
+      <div class="flex mx-0.5 items-center justify-center">
+        <a href="/">
+          <figure>
+            <img class="cursor-pointer bg-transparent w-auto h-[40px] md:h-[60px]" src="/images/sed-header-logo.png">
+          </figure>
+        </a>
+      </div>
+      <!--NavBar Menü -->
+      <nav class="hidden lg:flex flex-row items-center justify-center">
+        <ul class="flex flex-row flex-1 items-center text-white gap-4 quicksand justify-center"
+          style=" letter-spacing: 1.53px;">
+
+          <li class="mx-5 text-xs font-light opacity-45">
+            <h1>Home</h1>
+          </li>
+          <li class="mx-5 text-xs font-light hover:font-bold ease-in-out duration-500 hover:cursor-pointer">
+            <a href="/produkte">Produkte</a>
+          </li>
+          <li class="mx-5 text-xs font-light hover:font-bold ease-in-out duration-500 hover:cursor-pointer">
+            <a href="/vorteile">Vorteile</a>
+          </li>
+          <li class="mx-5 text-xs font-light hover:font-bold ease-in-out duration-500 hover:cursor-pointer">
+            <a href="/ratgeber">Ratgeber</a>
+          </li>
+
+
+        </ul>
+      </nav>
+
+
+   
+      <!--Request Button-->
+      <div class="md:flex gap-4 hidden items-center justify-center">
+        <h1 class="cursor-pointer text-slate-100 text-sm font-semibold quicksand hover:underline">Freunde empfehlen</h1>
+        <a href="/anfrage" target="_blank"><button
+            class="rounded-2xl bg-orange-400 quicksand text-black text-sm hover:text-white shadow-xl font-semibold hover:bg-lime-600 ease-in-out transition-all duration-700 p-3 px-4 py-1.5"
+            type="button">Erspamis berechnen</button></a>
+      </div>
+
+
+      <!--MOBİLE MENÜ-->
+      <div class="relative lg:hidden z-50 inline-block" id="navbar-wrappex" onclick="openMenu()">
+        <div class="relative">
+          <span>
+            <i class="fa-solid fa-bars fas fa fa-x cursor-pointer" id="menuBar" role="button" style="color: darkgrey;"></i>
+          </span>
+
+          <span>
+            <i class="fa-regular hidden font-extrabold quicksand fas fa   cursor-pointer" id="menuArrow" role="button" ondblclick="closeMenu()" style="color: darkgrey; font-size: 20px;">X</i>
+          </span>
+        </div>
+        <div class="absolute hidden min-w-64 ease-in-out cursor-pointer duration-700 border-hidden mt-4 -right-6 " id="navbar-menu">
+          <ul class="flex flex-col text-black h-screen font-bold quicksand ease-in-out duration-500 gap-6 p-5 z-50 bg-slate-200 bg-opacity-95">
+            <li class="p-1 border border-black border-l-0 border-t-0 border-r-0 pb-2">
+              <a class="text-black text-opacity-65  text-xs  hover:ease-in-out duration-300 hover:text-opacity-100 " href="/">Home</a>
+            </li>
+
+            <li class="p-1 border border-black border-l-0 border-t-0 border-r-0 pb-2">
+              <a class="text-black text-opacity-65 text-xs hover:ease-in-out duration-300  hover:text-opacity-100" href="/produkte">Produkte</a>
+            </li>
+            <li class="p-1 border border-black border-l-0 border-t-0 border-r-0 pb-2">
+              <a class="text-black text-opacity-65  text-xs  hover:ease-in-out duration-300  hover:text-opacity-100" href="/vorteile">Vorteile</a>
+            </li>
+            <li class="p-1 border border-black border-l-0 border-t-0 border-r-0 pb-2">
+              <a class="text-black text-opacity-65  text-xs  hover:ease-in-out duration-300  hover:text-opacity-100" href="/ratgeber">Ratgeber</a>
+            </li>
+            <li class="p-1 border border-black border-l-0 border-t-0 border-r-0 pb-2">
+              <a class="text-black text-opacity-65 hover:ease-in-out  text-xs  duration-300  hover:text-opacity-100" href="/impressum">Impressum</a>
+            </li>
+            <li class="p-1 border-l-0 border-black absolute bottom-14 border-t-0 mb-4 border-r-0 pb-1">
+              <a class="text-black text-opacity-75 hover:ease-in-out duration-300  hover:text-opacity-100 " href="/">
+                <img class="cursor-pointer w-auto h-[50px]" src="/images/sed-header-logo.png">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <main onclick="closeMobileBar()" class="bg-white relative mt-12">
+    <!--Main Container-->
+    <div style="border-bottom-right-radius: 25%;"
+      class="container-fluid lg:container mx-auto relative bg-gray-600 bg-opacity-85 flex py-12 px-2 md:px-6 flex-col items-center justify-center">
+      <!--Main Section-->
+      <div class="flex items-end justify-center py-12 md:py-20 xl:py-28">
+        <h1
+          class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl  font-bold text-center pt-6 md:pt-10 xl:pt-12 rounded-full quicksand tracking-wider text-white">
+          Impressum</h1>
+      </div>
+      <!--Main Content-->
+    </div>
+
+    <div
+      class="flex flex-col container mx-auto px-4 items-start justify-center md:px-10 xl:px-16 text-center quicksand mb-12 my-5 pt-12 gap-8">
+
+
+      <ul
+        class="flex flex-col pl-4 items-start text-base md:text-base xl:text-lg justify-center gap-6 quicksand font-semibold">
+        <h1
+          class="font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-3 pt-3 pt-serif-bold text-center text-black tracking-widest">
+          Diese Seite wird betrieben von:
+        </h1>
+        <li>
+          <h2>SED - Solar Energie Deutschland</h2>
+        </li>
+        <li>
+          <h2>Oranienstraße 185</h2>
+        </li>
+        <li>
+          <h2>10999 Berlin</h2>
+        </li>
+        <li>
+          <h2>E-Mail: info@sed.de</h2>
+        </li>
+        <li>
+          <h2>Telefon: 0800 9 350 660</h2>
+        </li>
+        <li>
+          <h2>Telefon: +44 50 66 477 4590</h2>
+        </li>
+        <li>
+          <h2>Telefax: +44 12 26 538 2349</h2>
+        </li>
+
+      </ul>
+
+      <ul
+        class="flex flex-col pl-4 flex-wrap items-start mt-4 justify-center text-base text-center md:text-base xl:text-lg gap-6 quicksand font-semibold">
+        <li>
+          <h2>Geschäftsführung: Jamie Heywood, Dr. Sarah Müller</h2>
+        </li>
+        <li>
+          <h2>Umsatzsteuer-ID: DE306830129</h2>
+        </li>
+      </ul>
+
+
+
+      <!--3 TİTTLE-->
+      <div class="flex flex-col gap-16 xl:gap-24 p-10 mb-20 my-16 px-4 xl:px-20 items-center justify-center">
+
+        <div class="flex flex-row flex-wrap lg:flex-nowrap gap-16 pr-2  xl:pr-12 space-x-4 items-center justify-center">
+          <div class="w-full text-center flex items-center justify-center ">
+            <h1 class="text-3xl md:text-4xl xl:text-5xl quicksand font-medium">
+              Hinweis auf EU-Streitschlichtung</h1>
+          </div>
+          <div
+            class="flex items-center justify-center w-full lg:w-3/4 text-justify indent-1 tracking-wider quicksand text-sm xl:text-base">
+            <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+              http://ec.europa.eu/consumers/odr. Unsere E-Mail-Adresse finden Sie oben auf dieser Seite. Wir
+              sind nicht dazu verpflichtet, an Streitbeilegungsverfahren vor einer
+              Verbraucherschlichtungsstelle teilzunehmen und nehmen auch nicht freiwillig daran teil.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="flex flex-row flex-wrap lg:flex-nowrap gap-16 pr-2 xl:pr-12 space-x-4 items-center justify-center">
+          <div class="w-full text-center flex items-center justify-center ">
+            <h1 class="text-3xl md:text-4xl xl:text-5xl quicksand font-medium">
+              1. Haftungsbeschränkung</h1>
+          </div>
+          <div
+            class="flex items-center justify-center w-full lg:w-3/4 text-justify indent-1 tracking-wider quicksand text-sm xl:text-base">
+            <p>Die Inhalte des Internetauftritts wurden mit größtmöglicher Sorgfalt und nach bestem Gewissen
+              erstellt. Dennoch übernimmt der Anbieter dieser Webseite keine Gewähr für die Aktualität,
+              Vollständigkeit und Richtigkeit der bereitgestellten Seiten und Inhalte. Als Dienstanbieter ist
+              der Anbieter dieser Webseite für eigene Inhalte und bereitgestellte Informationen auf diesen
+              Seiten nach den allgemeinen Gesetzen verantwortlich; er ist jedoch nicht verpflichtet, die
+              übermittelten oder gespeicherten fremden Informationen zu überwachen. Eine Entfernung oder
+              Sperrung dieser Inhalte erfolgt umgehend ab dem Zeitpunkt der Kenntnis einer konkreten
+              Rechtsverletzung. Eine Haftung ist erst ab dem Zeitpunkt der Kenntniserlangung möglich.</p>
+          </div>
+        </div>
+
+
+
+        <div class="flex flex-row flex-wrap lg:flex-nowrap gap-16 pr-2 xl:pr-12 space-x-4 items-center justify-center">
+          <div class="w-full text-center flex items-center justify-center">
+            <h1 class="text-3xl md:text-4xl xl:text-5xl quicksand font-medium">
+              2. Externe Links</h1>
+          </div>
+          <div
+            class="flex items-center justify-center w-full lg:w-3/4 text-justify indent-1 tracking-wider quicksand text-sm xl:text-base">
+            <p>
+              Die Webseite enthält sog. „externe Links“ (Verlinkungen) zu anderen Webseiten, auf deren Inhalt
+              der Anbieter der Webseite keinen Einfluss hat. Aus diesem Grund kann der Anbieter für diese
+              Inhalte auch keine Gewähr übernehmen. Für die Inhalte und Richtigkeit der bereitgestellten
+              Informationen ist der jeweilige Anbieter der verlinkten Webseite verantwortlich. Zum Zeitpunkt
+              der Verlinkung waren keine Rechtsverstöße erkennbar. Bei Bekanntwerden einer solchen
+              Rechtsverletzung wird der Link umgehend entfernt.</p>
+          </div>
+        </div>
+
+        <div class="flex flex-row flex-wrap lg:flex-nowrap gap-16 pr-2 xl:pr-12 space-x-4 items-center justify-center">
+          <div class="w-full text-center flex items-center justify-center">
+            <h1 class="text-3xl md:text-4xl xl:text-5xl quicksand font-medium">
+              3. Urheberrecht/ Leistungsschutzrecht</h1>
+          </div>
+          <div
+            class="flex items-center justify-center w-full lg:w-3/4 text-justify indent-1 tracking-wider quicksand text-sm xl:text-base">
+            <p>
+              Die auf dieser Webseite veröffentlichten Inhalte, Werke und bereitgestellten Informationen
+              unterliegen dem deutschen Urheberrecht und Leistungsschutzrecht. Jede Art der Vervielfältigung,
+              Bearbeitung, Verbreitung, Einspeicherung und jede Art der Verwertung außerhalb der Grenzen des
+              Urheberrechts bedarf der vorherigen schriftlichen Zustimmung des jeweiligen Rechteinhabers. Das
+              unerlaubte Kopieren/Speichern der bereitgestellten Informationen auf diesen Webseiten ist nicht
+              gestattet und strafbar.</p>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+  </main>
+
+
+
+
+
+ <!--FOOTER-->
+ <footer class="mt-12 pb-4 footer">
+  <div class="container-fluid lg:container mx-auto">
+    <div class="flex flex-col gap-6 p-2 items-center justify-center">
+      <div class="flex flex-row gap-12 md:gap-6 pt-10 p-5 w-full flex-wrap items-center justify-evenly">
+        <!--LOGO-->
+        <div class="flex items-center flex-col border gap-3 py-6 bg-gray-900 bg-opacity-85 rounded-lg p-3 px-6 cursor-pointer">
+          <a href="/"><img class="w-36 h-56 md:w-44 md:h-60 xl:w-56 xl:h-72" src="/images/sed-header-logo.png"></a>
+          <div class="flex flex-col items-start gap-3">
+          <div class="flex flex-row gap-3 bg-slate-100 p-1 bg-opacity-25 items-center justify-center">
+            <i class="fa-solid text-yellow-500 fas fa fa-city"></i>
+            <h2 class="text-slate-200 text-xs md:text-sm">Dieselstraße 77, 90441 Nuremberg</h2>
+          </div>
+
+          <div class="flex flex-row gap-3 bg-slate-100 p-1 bg-opacity-25  items-center justify-center">
+            <i class="fa-solid text-yellow-500 fas fa fa-envelope"></i>
+            <h2 class="text-slate-200 text-xs md:text-sm">www.solareigenbau-invest.de</h2>
+
+          </div>
+
+          <div class="flex flex-row gap-3 bg-slate-100 p-1 bg-opacity-25  items-center justify-center">
+            <i class="fa-solid fas text-yellow-500 fa fa-phone"></i>
+            <h2 class="text-slate-200 text-xs md:text-sm">0911 / 554 477 97</h2>
+
+          </div>
+        </div>
+        </div>
+        <!--FOOTER MENU-->
+        <div class="flex flex-col sm:flex-row items-start justify-center gap-20">
+
+          <div>
+            <ul class="flex flex-col quicksand gap-2 items-start text-xl font-medium justify-center">
+
+              <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 "><a href="/">> Home</a></li>
+
+              <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 "><a href="/produkte">> Produkte</a></li>
+
+
+              <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 "><a href="/vorteile">> Vorteile</a></li>
+
+
+              <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 "><a href="/ratgeber">> Ratgeber</a></li>
+
+            </ul>
+          </div>
+
+          <div>
+            <ul class="flex flex-col quicksand gap-2 items-start text-xl font-medium justify-center">
+              <a href="/">
+                <li class="font-light text-slate-200  duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Entdecken</li>
+              </a>
+              <a href="/">
+                <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Solaranlage</li>
+              </a>
+              <a href="/">
+                <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Solaranlage mit Speicher</li>
+              </a>
+              <a href="/">
+                <li class="font-light text-slate-200  duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Förderung</li>
+              </a>
+
+            </ul>
+          </div>
+          <div>
+            <ul class="flex flex-col quicksand gap-2 items-start text-xl font-medium justify-center">
+              <a href="/">
+                <li class="font-light text-slate-200  duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Mitmachen</li>
+              </a>
+              <a href="/">
+                <li class="font-light text-slate-200 duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Über SED</li>
+              </a>
+              <a href="/">
+                <li class="font-light text-slate-200  duration-300 ease-in-out transition-all hover:text-yellow-500 ">> Presse</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="border-collapse border-gray-500  w-full my-6 ">
+      <div
+        class="px-0 md:px-12 xl:px-16 w-full text-xs md:text-sm lg:w-4/5 leading-loose tracking-wider text-justify text-slate-200 quicksand py-1 my-1">
+        
+        <p>
+          Repräsentatives Beispiel gemäß § 17 PAngV: Bei einem Barkaufpreis von 8.192 Euro inkl. MwSt. und einer
+          Laufzeit von 25 Jahren (Anzahl der Raten: 300) erhalten mindestens 2/3 aller Kund:innen einen festen
+          Sollzinssatz von 8,20 Prozent (effektiver Jahreszinssatz 8,52 Prozent, Gesamtbetrag 19.296 Euro). Bonität
+          vorausgesetzt. Beachte die Voraussetzungen für den Ratenkauf. Darlehensgeber ist die SED GmbH,
+          Oranienstraße 185, 10999 Berlin. Bei dieser Berechnung handelt es sich um ein tagesaktuelles Preisbeispiel
+          vom 03.06.2024. Änderungen zu einem späteren Zeitpunkt aufgrund wechselnder Marktzinssätze sind vorbehalten.
+        </p>
+      </div>
+      <hr class="border-collapse border-gray-500  w-full my-6 ">
+  
+      
+      <div class="flex flex-row gap-6 items-center my-1 pb-2 justify-center text-center">
+        <ul class="flex flex-row flex-wrap gap-4 quicksand  text-slate-100 cursor-pointer text-xl items-center justify-center">
+          <li>
+            <h1 class="font-bold">2024 SED ®</h1>
+          </li> |
+          <li>
+            <a href="/impressum">
+              <h1>Impressum</h1>
+            </a>
+          </li> |
+          <li>
+            <h1>Datenschutz</h1>
+          </li> |
+          <li>
+            <h1>AGB</h1>
+          </li> |
+          <li>
+            <h1>Cookies</h1>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+<script>
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuBar = document.getElementById('menuBar');
+    const menuArrow = document.getElementById('menuArrow');
+    const mobileMenu = document.getElementById('navbar-menu');
+  
+
+    menuBar.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuBar.classList.toggle('hidden');
+      menuArrow.classList.toggle('hidden');
+    });
+  
+    menuArrow.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuBar.classList.toggle('hidden');
+      menuArrow.classList.toggle('hidden');
+    });
+  
+
+    document.addEventListener('click', (event) => {
+      if (!mobileMenu.contains(event.target) && !menuBar.contains(event.target) && !menuArrow.contains(event.target)) {
+        mobileMenu.classList.add('hidden');
+        menuBar.classList.remove('hidden');
+        menuArrow.classList.add('hidden');
+      }
+    });
+  });
+</script>
+
+</html>
